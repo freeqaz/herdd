@@ -1,0 +1,642 @@
+{
+ "last_seen_at": null,
+ "notifications": [
+  {
+   "associated_id": {
+    "instance_id": 47848957,
+    "machine_id": 143822
+   },
+   "created_at": 1786865739.19366,
+   "event_id": "a91760335385467a963570b346eaa059",
+   "message": "Your instance 47848957 running registry.example.com/train:t212-latest on machine 143822 has started. You are being charged $0.480/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47848531,
+    "machine_id": 145657
+   },
+   "created_at": 1786865421.98343,
+   "event_id": "acb2f611fccf47d486512a7296c93dc6",
+   "message": "Your instance 47848531 running registry.example.com/train:t212-latest on machine 145657 has started. You are being charged $0.160/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47848510,
+    "machine_id": 1569
+   },
+   "created_at": 1786865359.1375587,
+   "event_id": "ca04bc261e354fcc966388dbf0feb4a0",
+   "message": "Your instance 47848510 running registry.example.com/train:t212-latest on machine 1569 has started. You are being charged $0.156/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47848147,
+    "machine_id": 138918
+   },
+   "created_at": 1786865038.7070615,
+   "event_id": "768dbdb914494a20bb6994709ff7bd8a",
+   "message": "Your instance 47848147 running registry.example.com/train:t212-latest on machine 138918 has started. You are being charged $0.400/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47848147,
+    "machine_id": 138918,
+    "new_min_bid": 1.27,
+    "your_bid": 0.4
+   },
+   "created_at": 1786865020.5974677,
+   "event_id": "a4dfdd04fa014713865e612d586f0394",
+   "message": "Your interruptible instance 47848147 on machine 138918 has been outbid and will be stopped. Your bid was $0.40/hr and the current minimum bid is $1.27/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47848147 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47848143,
+    "machine_id": 43532
+   },
+   "created_at": 1786864851.46317,
+   "event_id": "e2d6730acfbe49c89a3bfcbe8153fc46",
+   "message": "Your instance 47848143 running registry.example.com/train:t212-latest on machine 43532 has started. You are being charged $1.600/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47848037,
+    "machine_id": 114058
+   },
+   "created_at": 1786864851.2537742,
+   "event_id": "774bf46030ff448fa616166284387ba4",
+   "message": "Your instance 47848037 running vllm/vllm-openai:v0.27.1 on machine 114058 has started. You are being charged $0.303/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47847410,
+    "machine_id": 35115
+   },
+   "created_at": 1786863971.0900714,
+   "event_id": "13662b5af8ac4a4482dbb05e6750f1a5",
+   "message": "Your instance 47847410 running registry.example.com/train:t212-latest on machine 35115 has started. You are being charged $0.113/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47847238,
+    "machine_id": 40291
+   },
+   "created_at": 1786863843.1861866,
+   "event_id": "9a3a0184e30a4152a50c1861b3b26f26",
+   "message": "Your instance 47847238 running vllm/vllm-openai:v0.27.1 on machine 40291 has started. You are being charged $0.241/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47842494,
+    "machine_id": 43532,
+    "new_min_bid": 3.86,
+    "your_bid": 1.6
+   },
+   "created_at": 1786862382.9400356,
+   "event_id": "89248d7f7293434dac6f6fa8ee35e943",
+   "message": "Your interruptible instance 47842494 on machine 43532 has been outbid and will be stopped. Your bid was $1.60/hr and the current minimum bid is $3.86/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47842494 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47845680,
+    "machine_id": 71654
+   },
+   "created_at": 1786861904.490035,
+   "event_id": "f073638bd02e47c0a941fc323b4f2998",
+   "message": "Your instance 47845680 running registry.example.com/train:t212-latest on machine 71654 has started. You are being charged $1.568/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47845563,
+    "machine_id": 56748
+   },
+   "created_at": 1786861588.2915106,
+   "event_id": "fd214b2974414d799efc23dfeaf2e623",
+   "message": "Your instance 47845563 running registry.example.com/train:t212-latest on machine 56748 has started. You are being charged $1.000/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47845356,
+    "machine_id": 56748,
+    "new_min_bid": 1.0,
+    "your_bid": 0.45
+   },
+   "created_at": 1786861461.094416,
+   "event_id": "3f2e0af233b94991af64f35225ef51ac",
+   "message": "Your interruptible instance 47845356 on machine 56748 has been outbid and will be stopped. Your bid was $0.45/hr and the current minimum bid is $1.00/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47845356 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47845221,
+    "machine_id": 145857
+   },
+   "created_at": 1786861403.0506375,
+   "event_id": "1c29547842ed444da05730269bdae773",
+   "message": "Your instance 47845221 running registry.example.com/train:t212-latest on machine 145857 has started. You are being charged $0.513/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47844660,
+    "machine_id": 56760,
+    "new_min_bid": 1.0,
+    "your_bid": 0.24
+   },
+   "created_at": 1786860895.5931041,
+   "event_id": "d3817d516110490d80761170d6bfc79a",
+   "message": "Your interruptible instance 47844660 on machine 56760 has been outbid and will be stopped. Your bid was $0.24/hr and the current minimum bid is $1.00/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47844660 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47844684,
+    "machine_id": 28415
+   },
+   "created_at": 1786860655.4969106,
+   "event_id": "74ed42ce7d4247e2b89d3dc2a8ab4fe6",
+   "message": "Your instance 47844684 running registry.example.com/train:t212-latest on machine 28415 has started. You are being charged $0.953/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47844629,
+    "machine_id": 67966
+   },
+   "created_at": 1786860655.4623046,
+   "event_id": "1e1bc18345804492a3f745076f7bc6e1",
+   "message": "Your instance 47844629 running registry.example.com/train:t212-latest on machine 67966 has started. You are being charged $0.450/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47844660,
+    "machine_id": 56760
+   },
+   "created_at": 1786860530.0856328,
+   "event_id": "964f5ed67d66430da5ad5deaa5a5c030",
+   "message": "Your instance 47844660 running registry.example.com/train:t212-latest on machine 56760 has started. You are being charged $0.240/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47843687,
+    "machine_id": 56764
+   },
+   "created_at": 1786859465.9373553,
+   "event_id": "c9f0819b8ce045399ff7f791e3929441",
+   "message": "Your instance 47843687 running registry.example.com/train:t212-latest on machine 56764 has started. You are being charged $0.208/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47842619,
+    "machine_id": 56760,
+    "new_min_bid": 1.0,
+    "your_bid": 0.64
+   },
+   "created_at": 1786858446.6962144,
+   "event_id": "1e711eb17bff400fa679e932541bf011",
+   "message": "Your interruptible instance 47842619 on machine 56760 has been outbid and will be stopped. Your bid was $0.64/hr and the current minimum bid is $1.00/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47842619 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47842619,
+    "machine_id": 56760
+   },
+   "created_at": 1786858281.544254,
+   "event_id": "77576707495a46e294651715310f7f72",
+   "message": "Your instance 47842619 running registry.example.com/train:t212-latest on machine 56760 has started. You are being charged $0.240/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47842494,
+    "machine_id": 43532
+   },
+   "created_at": 1786858095.8784235,
+   "event_id": "edc9daf0fad64788aaabbf4b516e09a1",
+   "message": "Your instance 47842494 running registry.example.com/train:t212-latest on machine 43532 has started. You are being charged $1.600/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47840746,
+    "machine_id": 54830,
+    "new_min_bid": 1.32,
+    "your_bid": 0.64
+   },
+   "created_at": 1786857564.2050464,
+   "event_id": "58df5267b92242638ec860e8fafa59aa",
+   "message": "Your interruptible instance 47840746 on machine 54830 has been outbid and will be stopped. Your bid was $0.64/hr and the current minimum bid is $1.32/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47840746 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47841868,
+    "machine_id": 56236,
+    "new_min_bid": 2.0,
+    "your_bid": 0.35
+   },
+   "created_at": 1786857319.4472647,
+   "event_id": "2455a31e631e4ab68ca6d25f7f0b0a79",
+   "message": "Your interruptible instance 47841868 on machine 56236 has been outbid and will be stopped. Your bid was $0.35/hr and the current minimum bid is $2.00/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47841868 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47841874,
+    "machine_id": 147577
+   },
+   "created_at": 1786857286.0389926,
+   "event_id": "0ca0264c0ce0490e9884801f84c38582",
+   "message": "Your instance 47841874 running registry.example.com/train:t212-latest on machine 147577 has started. You are being charged $1.600/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47840057,
+    "machine_id": 56759,
+    "new_min_bid": 0.15,
+    "your_bid": 0.16
+   },
+   "created_at": 1786857116.8241296,
+   "event_id": "aceda5eb6cc04537908bf24d9685df23",
+   "message": "Your interruptible instance 47840057 on machine 56759 has been outbid and will be stopped. Your bid was $0.16/hr and the current minimum bid is $0.15/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47840057 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47840534,
+    "machine_id": 34985,
+    "new_min_bid": 2.42,
+    "your_bid": 0.96
+   },
+   "created_at": 1786856645.046333,
+   "event_id": "88fd921d9cd74adaac3336dc7ee9cb94",
+   "message": "Your interruptible instance 47840534 on machine 34985 has been outbid and will be stopped. Your bid was $0.96/hr and the current minimum bid is $2.42/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47840534 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "actual_status": "running",
+    "instance_id": 47840777,
+    "machine_id": 56359
+   },
+   "created_at": 1786856384.0172448,
+   "event_id": "11736e4f3fb54b2a9580b32f25ca0b75",
+   "message": "Your instance 47840777 on machine 56359 has moved from Scheduling to running \u2014 your GPU is now available. View it at https://console.vast.ai/instances/.",
+   "notif_type": "instance_resumed",
+   "subject": "Your Vast.ai Instance #47840777 Is Now Running (Was Scheduling)",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47840777,
+    "machine_id": 56359
+   },
+   "created_at": 1786856331.59153,
+   "event_id": "edf398e036524875a1a676bb0d5ac586",
+   "message": "Your instance 47840777 running registry.example.com/train:t212-latest on machine 56359 has started. You are being charged $6.105/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47840746,
+    "machine_id": 54830
+   },
+   "created_at": 1786856268.484373,
+   "event_id": "48d6434323df41b08da57e4112676b6a",
+   "message": "Your instance 47840746 running registry.example.com/train:t212-latest on machine 54830 has started. You are being charged $0.640/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "actual_status": "running",
+    "instance_id": 47840746,
+    "machine_id": 54830
+   },
+   "created_at": 1786856258.2496989,
+   "event_id": "eed422c700534bb4883bc6d5ee3ba425",
+   "message": "Your instance 47840746 on machine 54830 has moved from Scheduling to running \u2014 your GPU is now available. View it at https://console.vast.ai/instances/.",
+   "notif_type": "instance_resumed",
+   "subject": "Your Vast.ai Instance #47840746 Is Now Running (Was Scheduling)",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47839984,
+    "machine_id": 140932,
+    "new_min_bid": 2.54,
+    "your_bid": 1.2
+   },
+   "created_at": 1786856002.3633082,
+   "event_id": "0584a6b5a7fe408e8c259b21086da8cc",
+   "message": "Your interruptible instance 47839984 on machine 140932 has been outbid and will be stopped. Your bid was $1.20/hr and the current minimum bid is $2.54/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47839984 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47840534,
+    "machine_id": 34985
+   },
+   "created_at": 1786855772.9590743,
+   "event_id": "716db38f971c45b1ad7d8d95ec7f9e9a",
+   "message": "Your instance 47840534 running registry.example.com/train:t212-latest on machine 34985 has started. You are being charged $1.440/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47833510,
+    "machine_id": 34985,
+    "new_min_bid": 1.44,
+    "your_bid": 1.2
+   },
+   "created_at": 1786855727.9368002,
+   "event_id": "8719cc0dbd184f9da3891fabf5a5ba6d",
+   "message": "Your interruptible instance 47833510 on machine 34985 has been outbid and will be stopped. Your bid was $1.20/hr and the current minimum bid is $1.44/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47833510 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47840057,
+    "machine_id": 56759
+   },
+   "created_at": 1786855399.6494706,
+   "event_id": "c9f1cc7c53c341bbae0c7c6c29c7ebfa",
+   "message": "Your instance 47840057 running registry.example.com/train:t212-latest on machine 56759 has started. You are being charged $0.185/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47839984,
+    "machine_id": 140932
+   },
+   "created_at": 1786855399.624109,
+   "event_id": "1018ee05c8f14abeb3e3f26b043be3c5",
+   "message": "Your instance 47839984 running registry.example.com/train:t212-latest on machine 140932 has started. You are being charged $1.200/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47839964,
+    "machine_id": 98261,
+    "new_min_bid": 1.25,
+    "your_bid": 0.48
+   },
+   "created_at": 1786855362.9967098,
+   "event_id": "4b6ebf2341fc4f1f9cfb437ae430f9e7",
+   "message": "Your interruptible instance 47839964 on machine 98261 has been outbid and will be stopped. Your bid was $0.48/hr and the current minimum bid is $1.25/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47839964 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47839942,
+    "machine_id": 144381
+   },
+   "created_at": 1786855277.8758054,
+   "event_id": "884deae334454beea89a019c00ab074d",
+   "message": "Your instance 47839942 running registry.example.com/train:t212-latest on machine 144381 has started. You are being charged $0.483/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47839964,
+    "machine_id": 98261
+   },
+   "created_at": 1786855086.8163805,
+   "event_id": "43e5b226162d463cb9782594eef89510",
+   "message": "Your instance 47839964 running registry.example.com/train:t212-latest on machine 98261 has started. You are being charged $0.480/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47836912,
+    "machine_id": 147577
+   },
+   "created_at": 1786851894.328159,
+   "event_id": "8c3480133b19419a90739db3bb9afed3",
+   "message": "Your instance 47836912 running registry.example.com/train:t212-latest on machine 147577 has started. You are being charged $1.600/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47833510,
+    "machine_id": 34985,
+    "new_min_bid": 2.33,
+    "your_bid": 0.96
+   },
+   "created_at": 1786848008.4190044,
+   "event_id": "93f8694533b7431a81ce703bb72106eb",
+   "message": "Your interruptible instance 47833510 on machine 34985 has been outbid and will be stopped. Your bid was $0.96/hr and the current minimum bid is $2.33/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47833510 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47833510,
+    "machine_id": 34985
+   },
+   "created_at": 1786847839.5854888,
+   "event_id": "64619467cf23452bad2f2671e89520ac",
+   "message": "Your instance 47833510 running registry.example.com/train:t212-latest on machine 34985 has started. You are being charged $0.960/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47828027,
+    "machine_id": 34985,
+    "new_min_bid": 2.53,
+    "your_bid": 0.96
+   },
+   "created_at": 1786846625.657024,
+   "event_id": "eff30a43fbc24af39e60e0ad2fada4a3",
+   "message": "Your interruptible instance 47828027 on machine 34985 has been outbid and will be stopped. Your bid was $0.96/hr and the current minimum bid is $2.53/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47828027 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47829236,
+    "machine_id": 139200
+   },
+   "created_at": 1786843008.792096,
+   "event_id": "d3797b07d8b64871a789e69f00a2f91a",
+   "message": "Your instance 47829236 running registry.example.com/train:t212-latest on machine 139200 has started. You are being charged $3.200/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47828066,
+    "machine_id": 140092
+   },
+   "created_at": 1786841188.9690766,
+   "event_id": "70cf8edf23d44ddf829f58cdf313ed62",
+   "message": "Your instance 47828066 running registry.example.com/train:t212-latest on machine 140092 has started. You are being charged $2.667/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47828027,
+    "machine_id": 34985
+   },
+   "created_at": 1786840688.1310482,
+   "event_id": "def650af9f1a4909981499f77904ebd8",
+   "message": "Your instance 47828027 running registry.example.com/train:t212-latest on machine 34985 has started. You are being charged $0.960/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47737955,
+    "machine_id": 7506
+   },
+   "created_at": 1786742658.4310908,
+   "event_id": "d051eae75f024b47a0a9ce671f280a9d",
+   "message": "Your instance 47737955 running registry.example.com/train:t212-latest on machine 7506 has started. You are being charged $2.150/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47735552,
+    "machine_id": 8284,
+    "new_min_bid": 2.2,
+    "your_bid": 1.88
+   },
+   "created_at": 1786739971.7709396,
+   "event_id": "416e6c361c2844c6ace907e498e2d150",
+   "message": "Your interruptible instance 47735552 on machine 8284 has been outbid and will be stopped. Your bid was $1.88/hr and the current minimum bid is $2.20/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47735552 Has Been Outbid",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47734617,
+    "machine_id": 54487
+   },
+   "created_at": 1786739095.6541739,
+   "event_id": "a3834d72c6714cda9c41df58f3870589",
+   "message": "Your instance 47734617 running ubuntu:22.04 on machine 54487 has started. You are being charged $0.048/hr. View it at: https://console.vast.ai/instances/",
+   "notif_type": "instance_started",
+   "subject": "Your Vast.ai Instance Is Now Running",
+   "user_context": "client"
+  },
+  {
+   "associated_id": {
+    "instance_id": 47694876,
+    "machine_id": 39532,
+    "new_min_bid": 1.7,
+    "your_bid": 1.28
+   },
+   "created_at": 1786738521.3395326,
+   "event_id": "a63ecaf55e924a468eabb2ad71f7cf95",
+   "message": "Your interruptible instance 47694876 on machine 39532 has been outbid and will be stopped. Your bid was $1.28/hr and the current minimum bid is $1.70/hr. Update your bid at https://cloud.vast.ai/instances/ to keep it running.",
+   "notif_type": "outbid",
+   "subject": "Your Interruptible Instance #47694876 Has Been Outbid",
+   "user_context": "client"
+  }
+ ],
+ "seen_through_at": 1786865739.19366,
+ "success": true,
+ "unread_count": 50
+}

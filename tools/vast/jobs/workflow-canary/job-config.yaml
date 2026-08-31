@@ -1,0 +1,44 @@
+version: 1
+name: workflow-canary
+entrypoint: canary.sh
+# A GPU probe + one real torch step + checkpoint round-trip. Minutes, not hours;
+# generous so a slow image pull on a cheap spot box still finishes.
+timeout_s: 1200            # 20m
+
+# --- RESUME / ROUND-TRIP SAFETY ----------------------------------------------
+# The canary proves the checkpoint transport works: it writes out/ckpt/<token>
+# and reads it back (local round-trip), and jobd flushes the same glob to
+# jobs/<JOB_ID>/results/ every checkpoint_s so a real preempt would restore it.
+# The TERMINAL receipt (out/canary-receipt.json) is deliberately NOT a
+# checkpoints: glob (written-last doctrine) — its presence == canary done.
+checkpoint_s: 60
+checkpoints:
+  - "out/ckpt/**"
+results:
+  - "out/**"               # ckpt/ + canary-receipt.json + probe.log
+max_restarts: 1
+
+needs:
+  gpu: true
+  gpus: 1
+  gpu_ram_gb: 16
+  # Use the baked of-record train env (torch/transformers/bitsandbytes) — the
+  # whole point is to certify THAT image runs on a GPU box. No jobd venv.
+  venv: none
+
+# No assets: this is the real-image + version-probe canary (M4-T2 v1). It does
+# NOT stage model/adapter weights or run a full gen/train step (that is M5-T3).
+# The receipt's model/adapter/recipe SHA components are supplied by the control
+# plane via --env (CANARY_*), describing the workflow stage the receipt gates.
+
+env:
+  # Overridden per-run by the control plane (workflowctl canary launch) via
+  # `job submit --env`. Defaults keep a bare rehearsal self-describing.
+  CANARY_TTL_S: "86400"            # receipt validity window (24h)
+  CANARY_KEY: ""                   # composite SHA-256 (control plane computes)
+  CANARY_IMAGE_DIGEST: ""          # falls back to $HERDD_IMAGE_DIGEST (box env)
+  CANARY_JOBD_SHA: ""
+  CANARY_MODEL_SHA: ""
+  CANARY_ADAPTER_SHA: ""
+  CANARY_RECIPE_SHA: ""
+  CANARY_ALLOW_NO_GPU: "0"         # rehearsal sets 1 (CPU-only box image)

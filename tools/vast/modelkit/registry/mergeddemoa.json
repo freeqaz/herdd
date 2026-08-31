@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "mergeddemoa",
+  "kind": "merged",
+  "description": "Example merged artifact: a task adapter merged into qwen36-27b and relayed out into the base's repo layout, published once so a spot box's second and every later life pays a download instead of a ~52 GiB base pull plus a CPU-side bf16 merge. b2_model/b2_guards are DERIVED from b2_root + adapter_ident[:12].",
+
+  "family": "qwen36-27b",
+  "base": "qwen36-27b",
+  "adapter_ident": "fdfa492a959dd5aacb69d6725868552a31199a8bb1e0fd9c2fd0a271aec880c4",
+
+  "b2_root": "checkpoints/mergeddemoa-merged",
+  "b2_model": "checkpoints/mergeddemoa-merged/fdfa492a959d/model",
+  "b2_guards": "checkpoints/mergeddemoa-merged/fdfa492a959d/guards",
+
+  "fingerprint_sha256": "ad65f40a677ed082e701039e395132966c6d5ee3311a2fa4c0ec0e84f2778c79",
+  "n_files": 27,
+  "content_sha256": "f32c453d8a57393b096d4a0a912f5bcf2c3bd8b6ded855104526203825523b7c",
+
+  "serve": {
+    "served_name": "MERGEDDEMOA",
+    "dtype": "bfloat16",
+    "max_len": 20480,
+    "min_vram_gb": 96,
+    "tp": 1,
+    "lora_forbidden": true
+  }
+}

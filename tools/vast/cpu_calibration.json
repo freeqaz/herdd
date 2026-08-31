@@ -1,0 +1,1102 @@
+{
+ "arms": {
+  "compile_tu": {
+   "by_machine": {
+    "111175": {
+     "cpu_name": "AMD Ryzen Threadripper PRO 9965WX 24-Cores",
+     "n_records": 5,
+     "rate": 12.1384
+    },
+    "111634": {
+     "cpu_name": "AMD EPYC 7272 12-Core Processor",
+     "n_records": 1,
+     "rate": 5.2304
+    },
+    "114294": {
+     "cpu_name": "AMD EPYC 9655 96-Core Processor",
+     "n_records": 1,
+     "rate": 10.8235
+    },
+    "11963": {
+     "cpu_name": "Intel(R) Core(TM) Ultra 9 285K",
+     "n_records": 2,
+     "rate": 12.8977
+    },
+    "124686": {
+     "cpu_name": "13th Gen Intel(R) Core(TM) i7-13700",
+     "n_records": 1,
+     "rate": 11.2867
+    },
+    "136703": {
+     "cpu_name": "Intel(R) Xeon(R) w5-3435X",
+     "n_records": 3,
+     "rate": 8.9166
+    },
+    "136978": {
+     "cpu_name": "AMD EPYC 7543 32-Core Processor",
+     "n_records": 1,
+     "rate": 6.5356
+    },
+    "137153": {
+     "cpu_name": "AMD Ryzen 7 5800X 8-Core Processor",
+     "n_records": 1,
+     "rate": 8.9666
+    },
+    "137575": {
+     "cpu_name": "AMD EPYC 9654 96-Core Processor",
+     "n_records": 1,
+     "rate": 7.0638
+    },
+    "137832": {
+     "cpu_name": "AMD EPYC 7B12 64-Core Processor",
+     "n_records": 1,
+     "rate": 5.1359
+    },
+    "138338": {
+     "cpu_name": "AMD EPYC 7452 32-Core Processor",
+     "n_records": 1,
+     "rate": 5.4086
+    },
+    "138957": {
+     "cpu_name": "Intel(R) Core(TM) i9-14900KF",
+     "n_records": 1,
+     "rate": 10.6251
+    },
+    "140082": {
+     "cpu_name": "AMD EPYC 9755 128-Core Processor",
+     "n_records": 2,
+     "rate": 8.1655
+    },
+    "140316": {
+     "cpu_name": "Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz",
+     "n_records": 1,
+     "rate": 4.7731
+    },
+    "140932": {
+     "cpu_name": "INTEL(R) XEON(R) PLATINUM 8568Y+",
+     "n_records": 1,
+     "rate": 5.1258
+    },
+    "141918": {
+     "cpu_name": "AMD EPYC 7452 32-Core Processor",
+     "n_records": 1,
+     "rate": 5.5026
+    },
+    "142658": {
+     "cpu_name": "AMD EPYC 7663 56-Core Processor",
+     "n_records": 1,
+     "rate": 5.9782
+    },
+    "143822": {
+     "cpu_name": "AMD Ryzen Threadripper PRO 5965WX 24-Cores",
+     "n_records": 2,
+     "rate": 8.3097
+    },
+    "144381": {
+     "cpu_name": "Intel(R) Xeon(R) 6515P",
+     "n_records": 1,
+     "rate": 6.9105
+    },
+    "145381": {
+     "cpu_name": "AMD EPYC 7402 24-Core Processor",
+     "n_records": 1,
+     "rate": 5.3821
+    },
+    "147388": {
+     "cpu_name": "Intel(R) Xeon(R) Platinum 8488C",
+     "n_records": 3,
+     "rate": 7.7126
+    },
+    "147415": {
+     "cpu_name": "AMD EPYC 7662 64-Core Processor",
+     "n_records": 1,
+     "rate": 5.3246
+    },
+    "147562": {
+     "cpu_name": "AMD Ryzen Threadripper PRO 3975WX 32-Cores",
+     "n_records": 1,
+     "rate": 5.9731
+    },
+    "147654": {
+     "cpu_name": "AMD EPYC 9J14 96-Core Processor",
+     "n_records": 17,
+     "rate": 7.44
+    },
+    "15359": {
+     "cpu_name": "AMD EPYC 9334 32-Core Processor",
+     "n_records": 1,
+     "rate": 8.0456
+    },
+    "15476": {
+     "cpu_name": "AMD EPYC 7B13 64-Core Processor",
+     "n_records": 1,
+     "rate": 6.2406
+    },
+    "32591": {
+     "cpu_name": "11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz",
+     "n_records": 1,
+     "rate": 8.9894
+    },
+    "34898": {
+     "cpu_name": "Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz",
+     "n_records": 1,
+     "rate": 2.9834
+    },
+    "35127": {
+     "cpu_name": "AMD EPYC 9B14 96-Core Processor",
+     "n_records": 1,
+     "rate": 7.0609
+    },
+    "36359": {
+     "cpu_name": "AMD EPYC 7742 64-Core Processor",
+     "n_records": 1,
+     "rate": 5.278
+    },
+    "37894": {
+     "cpu_name": "Intel(R) Core(TM) i5-14500",
+     "n_records": 1,
+     "rate": 5.4476
+    },
+    "38455": {
+     "cpu_name": "Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz",
+     "n_records": 1,
+     "rate": 3.8037
+    },
+    "39235": {
+     "cpu_name": "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
+     "n_records": 1,
+     "rate": 3.6137
+    },
+    "39274": {
+     "cpu_name": "AMD EPYC 9374F 32-Core Processor",
+     "n_records": 1,
+     "rate": 8.3723
+    },
+    "42763": {
+     "cpu_name": "AMD EPYC 7K62 48-Core Processor",
+     "n_records": 2,
+     "rate": 5.3894
+    },
+    "43532": {
+     "cpu_name": "AMD EPYC 9755 128-Core Processor",
+     "n_records": 2,
+     "rate": 8.7662
+    },
+    "43574": {
+     "cpu_name": "AMD Ryzen 9 9950X 16-Core Processor",
+     "n_records": 1,
+     "rate": 13.1492
+    },
+    "43813": {
+     "cpu_name": "AMD Ryzen Threadripper 9970X 32-Cores",
+     "n_records": 1,
+     "rate": 10.7402
+    },
+    "43934": {
+     "cpu_name": "INTEL(R) XEON(R) PLATINUM 8573C",
+     "n_records": 3,
+     "rate": 5.3447
+    },
+    "44351": {
+     "cpu_name": "AMD Ryzen Threadripper 9970X 32-Cores",
+     "n_records": 1,
+     "rate": 10.9111
+    },
+    "45581": {
+     "cpu_name": "AMD Ryzen 9 9950X 16-Core Processor",
+     "n_records": 1,
+     "rate": 12.6984
+    },
+    "48076": {
+     "cpu_name": "AMD Ryzen Threadripper 9960X 24-Cores",
+     "n_records": 1,
+     "rate": 11.8542
+    },
+    "50938": {
+     "cpu_name": "AMD EPYC 9274F 24-Core Processor",
+     "n_records": 1,
+     "rate": 8.4157
+    },
+    "51732": {
+     "cpu_name": "AMD EPYC 9534 64-Core Processor",
+     "n_records": 1,
+     "rate": 7.5396
+    },
+    "54454": {
+     "cpu_name": "AMD Ryzen 9 7945HX with Radeon Graphics",
+     "n_records": 1,
+     "rate": 10.5876
+    },
+    "54830": {
+     "cpu_name": "INTEL(R) XEON(R) PLATINUM 8568Y+",
+     "n_records": 3,
+     "rate": 8.468
+    },
+    "55986": {
+     "cpu_name": "Intel(R) Xeon(R) 6767P",
+     "n_records": 1,
+     "rate": 6.7167
+    },
+    "56006": {
+     "cpu_name": "AMD Ryzen 9 3900X 12-Core Processor",
+     "n_records": 1,
+     "rate": 7.4669
+    },
+    "56409": {
+     "cpu_name": "Intel(R) Xeon(R) 6952P",
+     "n_records": 1,
+     "rate": 3.5677
+    },
+    "56748": {
+     "cpu_name": "AMD EPYC 7713P 64-Core Processor",
+     "n_records": 1,
+     "rate": 5.7318
+    },
+    "56757": {
+     "cpu_name": "AMD EPYC 7C13 64-Core Processor",
+     "n_records": 1,
+     "rate": 5.7255
+    },
+    "56759": {
+     "cpu_name": "AMD EPYC 7713P 64-Core Processor",
+     "n_records": 1,
+     "rate": 5.7565
+    },
+    "56760": {
+     "cpu_name": "AMD EPYC 7713P 64-Core Processor",
+     "n_records": 1,
+     "rate": 5.7296
+    },
+    "56764": {
+     "cpu_name": "AMD EPYC 7713P 64-Core Processor",
+     "n_records": 1,
+     "rate": 5.746
+    },
+    "56846": {
+     "cpu_name": "AMD EPYC 9J14 96-Core Processor",
+     "n_records": 1,
+     "rate": 7.2207
+    },
+    "59009": {
+     "cpu_name": "AMD EPYC 7K62 48-Core Processor",
+     "n_records": 1,
+     "rate": 5.1822
+    },
+    "81589": {
+     "cpu_name": "AMD EPYC 9754 128-Core Processor",
+     "n_records": 1,
+     "rate": 6.1494
+    },
+    "8719": {
+     "cpu_name": "AMD EPYC 7B13 64-Core Processor",
+     "n_records": 1,
+     "rate": 6.3062
+    },
+    "96453": {
+     "cpu_name": "AMD EPYC 9754 128-Core Processor",
+     "n_records": 2,
+     "rate": 6.0247
+    },
+    "98261": {
+     "cpu_name": "AMD EPYC 9J14 96-Core Processor",
+     "n_records": 3,
+     "rate": 7.4382
+    }
+   },
+   "by_model": {
+    "11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz": {
+     "n_machines": 1,
+     "rate": 8.9894,
+     "spread": null
+    },
+    "13th Gen Intel(R) Core(TM) i7-13700": {
+     "n_machines": 1,
+     "rate": 11.2867,
+     "spread": null
+    },
+    "AMD EPYC 7272 12-Core Processor": {
+     "n_machines": 1,
+     "rate": 5.2304,
+     "spread": null
+    },
+    "AMD EPYC 7402 24-Core Processor": {
+     "n_machines": 1,
+     "rate": 5.3821,
+     "spread": null
+    },
+    "AMD EPYC 7452 32-Core Processor": {
+     "n_machines": 2,
+     "rate": 5.4556000000000004,
+     "spread": 1.017
+    },
+    "AMD EPYC 7543 32-Core Processor": {
+     "n_machines": 1,
+     "rate": 6.5356,
+     "spread": null
+    },
+    "AMD EPYC 7662 64-Core Processor": {
+     "n_machines": 1,
+     "rate": 5.3246,
+     "spread": null
+    },
+    "AMD EPYC 7663 56-Core Processor": {
+     "n_machines": 1,
+     "rate": 5.9782,
+     "spread": null
+    },
+    "AMD EPYC 7713P 64-Core Processor": {
+     "n_machines": 4,
+     "rate": 5.7389,
+     "spread": 1.005
+    },
+    "AMD EPYC 7742 64-Core Processor": {
+     "n_machines": 1,
+     "rate": 5.278,
+     "spread": null
+    },
+    "AMD EPYC 7B12 64-Core Processor": {
+     "n_machines": 1,
+     "rate": 5.1359,
+     "spread": null
+    },
+    "AMD EPYC 7B13 64-Core Processor": {
+     "n_machines": 2,
+     "rate": 6.2734,
+     "spread": 1.011
+    },
+    "AMD EPYC 7C13 64-Core Processor": {
+     "n_machines": 1,
+     "rate": 5.7255,
+     "spread": null
+    },
+    "AMD EPYC 7K62 48-Core Processor": {
+     "n_machines": 2,
+     "rate": 5.2858,
+     "spread": 1.04
+    },
+    "AMD EPYC 9274F 24-Core Processor": {
+     "n_machines": 1,
+     "rate": 8.4157,
+     "spread": null
+    },
+    "AMD EPYC 9334 32-Core Processor": {
+     "n_machines": 1,
+     "rate": 8.0456,
+     "spread": null
+    },
+    "AMD EPYC 9374F 32-Core Processor": {
+     "n_machines": 1,
+     "rate": 8.3723,
+     "spread": null
+    },
+    "AMD EPYC 9534 64-Core Processor": {
+     "n_machines": 1,
+     "rate": 7.5396,
+     "spread": null
+    },
+    "AMD EPYC 9654 96-Core Processor": {
+     "n_machines": 1,
+     "rate": 7.0638,
+     "spread": null
+    },
+    "AMD EPYC 9655 96-Core Processor": {
+     "n_machines": 1,
+     "rate": 10.8235,
+     "spread": null
+    },
+    "AMD EPYC 9754 128-Core Processor": {
+     "n_machines": 2,
+     "rate": 6.08705,
+     "spread": 1.021
+    },
+    "AMD EPYC 9755 128-Core Processor": {
+     "n_machines": 2,
+     "rate": 8.46585,
+     "spread": 1.074
+    },
+    "AMD EPYC 9B14 96-Core Processor": {
+     "n_machines": 1,
+     "rate": 7.0609,
+     "spread": null
+    },
+    "AMD EPYC 9J14 96-Core Processor": {
+     "n_machines": 3,
+     "rate": 7.4382,
+     "spread": 1.03
+    },
+    "AMD Ryzen 7 5800X 8-Core Processor": {
+     "n_machines": 1,
+     "rate": 8.9666,
+     "spread": null
+    },
+    "AMD Ryzen 9 3900X 12-Core Processor": {
+     "n_machines": 1,
+     "rate": 7.4669,
+     "spread": null
+    },
+    "AMD Ryzen 9 7945HX with Radeon Graphics": {
+     "n_machines": 1,
+     "rate": 10.5876,
+     "spread": null
+    },
+    "AMD Ryzen 9 9950X 16-Core Processor": {
+     "n_machines": 2,
+     "rate": 12.9238,
+     "spread": 1.036
+    },
+    "AMD Ryzen Threadripper 9960X 24-Cores": {
+     "n_machines": 1,
+     "rate": 11.8542,
+     "spread": null
+    },
+    "AMD Ryzen Threadripper 9970X 32-Cores": {
+     "n_machines": 2,
+     "rate": 10.82565,
+     "spread": 1.016
+    },
+    "AMD Ryzen Threadripper PRO 3975WX 32-Cores": {
+     "n_machines": 1,
+     "rate": 5.9731,
+     "spread": null
+    },
+    "AMD Ryzen Threadripper PRO 5965WX 24-Cores": {
+     "n_machines": 1,
+     "rate": 8.3097,
+     "spread": null
+    },
+    "AMD Ryzen Threadripper PRO 9965WX 24-Cores": {
+     "n_machines": 1,
+     "rate": 12.1384,
+     "spread": null
+    },
+    "INTEL(R) XEON(R) PLATINUM 8568Y+": {
+     "n_machines": 3,
+     "rate": 6.1175,
+     "spread": 1.652
+    },
+    "INTEL(R) XEON(R) PLATINUM 8573C": {
+     "n_machines": 1,
+     "rate": 5.3447,
+     "spread": null
+    },
+    "Intel(R) Core(TM) Ultra 9 285K": {
+     "n_machines": 1,
+     "rate": 12.8977,
+     "spread": null
+    },
+    "Intel(R) Core(TM) i5-14500": {
+     "n_machines": 1,
+     "rate": 5.4476,
+     "spread": null
+    },
+    "Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz": {
+     "n_machines": 1,
+     "rate": 4.7731,
+     "spread": null
+    },
+    "Intel(R) Core(TM) i9-14900KF": {
+     "n_machines": 1,
+     "rate": 10.6251,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) 6515P": {
+     "n_machines": 1,
+     "rate": 6.9105,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) 6767P": {
+     "n_machines": 1,
+     "rate": 6.7167,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) 6952P": {
+     "n_machines": 1,
+     "rate": 3.5677,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz": {
+     "n_machines": 1,
+     "rate": 3.6137,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz": {
+     "n_machines": 1,
+     "rate": 2.9834,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz": {
+     "n_machines": 1,
+     "rate": 3.8037,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) Platinum 8488C": {
+     "n_machines": 1,
+     "rate": 7.7126,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) w5-3435X": {
+     "n_machines": 1,
+     "rate": 8.9166,
+     "spread": null
+    }
+   },
+   "fleet_median": 6.7167,
+   "fleet_spread": 4.407,
+   "generated": "2026-08-28T07:00:31Z",
+   "n_machines": 60,
+   "n_models": 47,
+   "rate_is": "per_s",
+   "units": "compile_tu"
+  },
+  "pyops": {
+   "by_machine": {
+    "111175": {
+     "cpu_name": "AMD Ryzen Threadripper PRO 9965WX 24-Cores",
+     "n_records": 5,
+     "rate": 9963334.92747
+    },
+    "111634": {
+     "cpu_name": "AMD EPYC 7272 12-Core Processor",
+     "n_records": 1,
+     "rate": 3205456.96995
+    },
+    "114294": {
+     "cpu_name": "AMD EPYC 9655 96-Core Processor",
+     "n_records": 1,
+     "rate": 7194694.69469
+    },
+    "11963": {
+     "cpu_name": "Intel(R) Core(TM) Ultra 9 285K",
+     "n_records": 2,
+     "rate": 9759392.77907
+    },
+    "124686": {
+     "cpu_name": "13th Gen Intel(R) Core(TM) i7-13700",
+     "n_records": 1,
+     "rate": 5246105.29143
+    },
+    "136703": {
+     "cpu_name": "Intel(R) Xeon(R) w5-3435X",
+     "n_records": 3,
+     "rate": 7212317.30645
+    },
+    "136978": {
+     "cpu_name": "AMD EPYC 7543 32-Core Processor",
+     "n_records": 1,
+     "rate": 5247209.11416
+    },
+    "137153": {
+     "cpu_name": "AMD Ryzen 7 5800X 8-Core Processor",
+     "n_records": 1,
+     "rate": 4217729.30951
+    },
+    "137575": {
+     "cpu_name": "AMD EPYC 9654 96-Core Processor",
+     "n_records": 1,
+     "rate": 6063405.29277
+    },
+    "137832": {
+     "cpu_name": "AMD EPYC 7B12 64-Core Processor",
+     "n_records": 1,
+     "rate": 3730363.36723
+    },
+    "138338": {
+     "cpu_name": "AMD EPYC 7452 32-Core Processor",
+     "n_records": 1,
+     "rate": 3455329.50022
+    },
+    "138957": {
+     "cpu_name": "Intel(R) Core(TM) i9-14900KF",
+     "n_records": 1,
+     "rate": 2772159.53445
+    },
+    "140082": {
+     "cpu_name": "AMD EPYC 9755 128-Core Processor",
+     "n_records": 2,
+     "rate": 8094578.46251
+    },
+    "140316": {
+     "cpu_name": "Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz",
+     "n_records": 1,
+     "rate": 1768734.43514
+    },
+    "140932": {
+     "cpu_name": "INTEL(R) XEON(R) PLATINUM 8568Y+",
+     "n_records": 1,
+     "rate": 4544534.86093
+    },
+    "141918": {
+     "cpu_name": "AMD EPYC 7452 32-Core Processor",
+     "n_records": 1,
+     "rate": 3833227.02517
+    },
+    "142658": {
+     "cpu_name": "AMD EPYC 7663 56-Core Processor",
+     "n_records": 1,
+     "rate": 4187366.47831
+    },
+    "143822": {
+     "cpu_name": "AMD Ryzen Threadripper PRO 5965WX 24-Cores",
+     "n_records": 2,
+     "rate": 6870740.14111
+    },
+    "144381": {
+     "cpu_name": "Intel(R) Xeon(R) 6515P",
+     "n_records": 1,
+     "rate": 5575180.18982
+    },
+    "145381": {
+     "cpu_name": "AMD EPYC 7402 24-Core Processor",
+     "n_records": 1,
+     "rate": 3827515.50976
+    },
+    "147388": {
+     "cpu_name": "Intel(R) Xeon(R) Platinum 8488C",
+     "n_records": 3,
+     "rate": 7279955.43401
+    },
+    "147415": {
+     "cpu_name": "AMD EPYC 7662 64-Core Processor",
+     "n_records": 1,
+     "rate": 3850608.70422
+    },
+    "147562": {
+     "cpu_name": "AMD Ryzen Threadripper PRO 3975WX 32-Cores",
+     "n_records": 1,
+     "rate": 3998618.07759
+    },
+    "147654": {
+     "cpu_name": "AMD EPYC 9J14 96-Core Processor",
+     "n_records": 17,
+     "rate": 6536883.94132
+    },
+    "15359": {
+     "cpu_name": "AMD EPYC 9334 32-Core Processor",
+     "n_records": 1,
+     "rate": 6620201.67782
+    },
+    "15476": {
+     "cpu_name": "AMD EPYC 7B13 64-Core Processor",
+     "n_records": 1,
+     "rate": 5208680.57871
+    },
+    "32591": {
+     "cpu_name": "11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz",
+     "n_records": 1,
+     "rate": 2959728.74678
+    },
+    "34898": {
+     "cpu_name": "Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz",
+     "n_records": 1,
+     "rate": 2487819.63507
+    },
+    "35127": {
+     "cpu_name": "AMD EPYC 9B14 96-Core Processor",
+     "n_records": 1,
+     "rate": 4440891.73106
+    },
+    "36359": {
+     "cpu_name": "AMD EPYC 7742 64-Core Processor",
+     "n_records": 1,
+     "rate": 3700326.81286
+    },
+    "37894": {
+     "cpu_name": "Intel(R) Core(TM) i5-14500",
+     "n_records": 1,
+     "rate": 2731957.57701
+    },
+    "38455": {
+     "cpu_name": "Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz",
+     "n_records": 1,
+     "rate": 1409476.04842
+    },
+    "39235": {
+     "cpu_name": "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
+     "n_records": 1,
+     "rate": 2776706.06666
+    },
+    "39274": {
+     "cpu_name": "AMD EPYC 9374F 32-Core Processor",
+     "n_records": 1,
+     "rate": 7246544.84742
+    },
+    "42763": {
+     "cpu_name": "AMD EPYC 7K62 48-Core Processor",
+     "n_records": 2,
+     "rate": 3792255.62045
+    },
+    "43532": {
+     "cpu_name": "AMD EPYC 9755 128-Core Processor",
+     "n_records": 2,
+     "rate": 7666706.88546
+    },
+    "43574": {
+     "cpu_name": "AMD Ryzen 9 9950X 16-Core Processor",
+     "n_records": 1,
+     "rate": 5206944.81472
+    },
+    "43813": {
+     "cpu_name": "AMD Ryzen Threadripper 9970X 32-Cores",
+     "n_records": 1,
+     "rate": 8252350.26936
+    },
+    "43934": {
+     "cpu_name": "INTEL(R) XEON(R) PLATINUM 8573C",
+     "n_records": 3,
+     "rate": 4421628.83963
+    },
+    "44351": {
+     "cpu_name": "AMD Ryzen Threadripper 9970X 32-Cores",
+     "n_records": 1,
+     "rate": 9074805.43617
+    },
+    "45581": {
+     "cpu_name": "AMD Ryzen 9 9950X 16-Core Processor",
+     "n_records": 1,
+     "rate": 5341149.92821
+    },
+    "48076": {
+     "cpu_name": "AMD Ryzen Threadripper 9960X 24-Cores",
+     "n_records": 1,
+     "rate": 9730352.47229
+    },
+    "50938": {
+     "cpu_name": "AMD EPYC 9274F 24-Core Processor",
+     "n_records": 1,
+     "rate": 7429862.10176
+    },
+    "51732": {
+     "cpu_name": "AMD EPYC 9534 64-Core Processor",
+     "n_records": 1,
+     "rate": 5977038.94447
+    },
+    "54454": {
+     "cpu_name": "AMD Ryzen 9 7945HX with Radeon Graphics",
+     "n_records": 1,
+     "rate": 3792291.63633
+    },
+    "54830": {
+     "cpu_name": "INTEL(R) XEON(R) PLATINUM 8568Y+",
+     "n_records": 3,
+     "rate": 4659069.54735
+    },
+    "55986": {
+     "cpu_name": "Intel(R) Xeon(R) 6767P",
+     "n_records": 1,
+     "rate": 6866320.97029
+    },
+    "56006": {
+     "cpu_name": "AMD Ryzen 9 3900X 12-Core Processor",
+     "n_records": 1,
+     "rate": 2897823.25596
+    },
+    "56409": {
+     "cpu_name": "Intel(R) Xeon(R) 6952P",
+     "n_records": 1,
+     "rate": 3671638.06461
+    },
+    "56748": {
+     "cpu_name": "AMD EPYC 7713P 64-Core Processor",
+     "n_records": 1,
+     "rate": 4609960.46498
+    },
+    "56757": {
+     "cpu_name": "AMD EPYC 7C13 64-Core Processor",
+     "n_records": 1,
+     "rate": 4600730.2279
+    },
+    "56759": {
+     "cpu_name": "AMD EPYC 7713P 64-Core Processor",
+     "n_records": 1,
+     "rate": 4892904.11474
+    },
+    "56760": {
+     "cpu_name": "AMD EPYC 7713P 64-Core Processor",
+     "n_records": 1,
+     "rate": 4818664.03503
+    },
+    "56764": {
+     "cpu_name": "AMD EPYC 7713P 64-Core Processor",
+     "n_records": 1,
+     "rate": 4782968.04212
+    },
+    "56846": {
+     "cpu_name": "AMD EPYC 9J14 96-Core Processor",
+     "n_records": 1,
+     "rate": 5835667.60037
+    },
+    "59009": {
+     "cpu_name": "AMD EPYC 7K62 48-Core Processor",
+     "n_records": 1,
+     "rate": 3832842.72946
+    },
+    "81589": {
+     "cpu_name": "AMD EPYC 9754 128-Core Processor",
+     "n_records": 1,
+     "rate": 5329246.0637
+    },
+    "8719": {
+     "cpu_name": "AMD EPYC 7B13 64-Core Processor",
+     "n_records": 1,
+     "rate": 4663900.66265
+    },
+    "96453": {
+     "cpu_name": "AMD EPYC 9754 128-Core Processor",
+     "n_records": 2,
+     "rate": 3132229.80256
+    },
+    "98261": {
+     "cpu_name": "AMD EPYC 9J14 96-Core Processor",
+     "n_records": 3,
+     "rate": 6328138.75682
+    }
+   },
+   "by_model": {
+    "11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz": {
+     "n_machines": 1,
+     "rate": 2959728.74678,
+     "spread": null
+    },
+    "13th Gen Intel(R) Core(TM) i7-13700": {
+     "n_machines": 1,
+     "rate": 5246105.29143,
+     "spread": null
+    },
+    "AMD EPYC 7272 12-Core Processor": {
+     "n_machines": 1,
+     "rate": 3205456.96995,
+     "spread": null
+    },
+    "AMD EPYC 7402 24-Core Processor": {
+     "n_machines": 1,
+     "rate": 3827515.50976,
+     "spread": null
+    },
+    "AMD EPYC 7452 32-Core Processor": {
+     "n_machines": 2,
+     "rate": 3644278.2626949996,
+     "spread": 1.109
+    },
+    "AMD EPYC 7543 32-Core Processor": {
+     "n_machines": 1,
+     "rate": 5247209.11416,
+     "spread": null
+    },
+    "AMD EPYC 7662 64-Core Processor": {
+     "n_machines": 1,
+     "rate": 3850608.70422,
+     "spread": null
+    },
+    "AMD EPYC 7663 56-Core Processor": {
+     "n_machines": 1,
+     "rate": 4187366.47831,
+     "spread": null
+    },
+    "AMD EPYC 7713P 64-Core Processor": {
+     "n_machines": 4,
+     "rate": 4800816.038575,
+     "spread": 1.061
+    },
+    "AMD EPYC 7742 64-Core Processor": {
+     "n_machines": 1,
+     "rate": 3700326.81286,
+     "spread": null
+    },
+    "AMD EPYC 7B12 64-Core Processor": {
+     "n_machines": 1,
+     "rate": 3730363.36723,
+     "spread": null
+    },
+    "AMD EPYC 7B13 64-Core Processor": {
+     "n_machines": 2,
+     "rate": 4936290.620680001,
+     "spread": 1.117
+    },
+    "AMD EPYC 7C13 64-Core Processor": {
+     "n_machines": 1,
+     "rate": 4600730.2279,
+     "spread": null
+    },
+    "AMD EPYC 7K62 48-Core Processor": {
+     "n_machines": 2,
+     "rate": 3812549.174955,
+     "spread": 1.011
+    },
+    "AMD EPYC 9274F 24-Core Processor": {
+     "n_machines": 1,
+     "rate": 7429862.10176,
+     "spread": null
+    },
+    "AMD EPYC 9334 32-Core Processor": {
+     "n_machines": 1,
+     "rate": 6620201.67782,
+     "spread": null
+    },
+    "AMD EPYC 9374F 32-Core Processor": {
+     "n_machines": 1,
+     "rate": 7246544.84742,
+     "spread": null
+    },
+    "AMD EPYC 9534 64-Core Processor": {
+     "n_machines": 1,
+     "rate": 5977038.94447,
+     "spread": null
+    },
+    "AMD EPYC 9654 96-Core Processor": {
+     "n_machines": 1,
+     "rate": 6063405.29277,
+     "spread": null
+    },
+    "AMD EPYC 9655 96-Core Processor": {
+     "n_machines": 1,
+     "rate": 7194694.69469,
+     "spread": null
+    },
+    "AMD EPYC 9754 128-Core Processor": {
+     "n_machines": 2,
+     "rate": 4230737.93313,
+     "spread": 1.701
+    },
+    "AMD EPYC 9755 128-Core Processor": {
+     "n_machines": 2,
+     "rate": 7880642.673985,
+     "spread": 1.056
+    },
+    "AMD EPYC 9B14 96-Core Processor": {
+     "n_machines": 1,
+     "rate": 4440891.73106,
+     "spread": null
+    },
+    "AMD EPYC 9J14 96-Core Processor": {
+     "n_machines": 3,
+     "rate": 6328138.75682,
+     "spread": 1.12
+    },
+    "AMD Ryzen 7 5800X 8-Core Processor": {
+     "n_machines": 1,
+     "rate": 4217729.30951,
+     "spread": null
+    },
+    "AMD Ryzen 9 3900X 12-Core Processor": {
+     "n_machines": 1,
+     "rate": 2897823.25596,
+     "spread": null
+    },
+    "AMD Ryzen 9 7945HX with Radeon Graphics": {
+     "n_machines": 1,
+     "rate": 3792291.63633,
+     "spread": null
+    },
+    "AMD Ryzen 9 9950X 16-Core Processor": {
+     "n_machines": 2,
+     "rate": 5274047.371464999,
+     "spread": 1.026
+    },
+    "AMD Ryzen Threadripper 9960X 24-Cores": {
+     "n_machines": 1,
+     "rate": 9730352.47229,
+     "spread": null
+    },
+    "AMD Ryzen Threadripper 9970X 32-Cores": {
+     "n_machines": 2,
+     "rate": 8663577.852765001,
+     "spread": 1.1
+    },
+    "AMD Ryzen Threadripper PRO 3975WX 32-Cores": {
+     "n_machines": 1,
+     "rate": 3998618.07759,
+     "spread": null
+    },
+    "AMD Ryzen Threadripper PRO 5965WX 24-Cores": {
+     "n_machines": 1,
+     "rate": 6870740.14111,
+     "spread": null
+    },
+    "AMD Ryzen Threadripper PRO 9965WX 24-Cores": {
+     "n_machines": 1,
+     "rate": 9963334.92747,
+     "spread": null
+    },
+    "INTEL(R) XEON(R) PLATINUM 8568Y+": {
+     "n_machines": 3,
+     "rate": 4659069.54735,
+     "spread": 1.026
+    },
+    "INTEL(R) XEON(R) PLATINUM 8573C": {
+     "n_machines": 1,
+     "rate": 4421628.83963,
+     "spread": null
+    },
+    "Intel(R) Core(TM) Ultra 9 285K": {
+     "n_machines": 1,
+     "rate": 9759392.77907,
+     "spread": null
+    },
+    "Intel(R) Core(TM) i5-14500": {
+     "n_machines": 1,
+     "rate": 2731957.57701,
+     "spread": null
+    },
+    "Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz": {
+     "n_machines": 1,
+     "rate": 1768734.43514,
+     "spread": null
+    },
+    "Intel(R) Core(TM) i9-14900KF": {
+     "n_machines": 1,
+     "rate": 2772159.53445,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) 6515P": {
+     "n_machines": 1,
+     "rate": 5575180.18982,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) 6767P": {
+     "n_machines": 1,
+     "rate": 6866320.97029,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) 6952P": {
+     "n_machines": 1,
+     "rate": 3671638.06461,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz": {
+     "n_machines": 1,
+     "rate": 2776706.06666,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz": {
+     "n_machines": 1,
+     "rate": 2487819.63507,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz": {
+     "n_machines": 1,
+     "rate": 1409476.04842,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) Platinum 8488C": {
+     "n_machines": 1,
+     "rate": 7279955.43401,
+     "spread": null
+    },
+    "Intel(R) Xeon(R) w5-3435X": {
+     "n_machines": 1,
+     "rate": 7212317.30645,
+     "spread": null
+    }
+   },
+   "fleet_median": 4663900.66265,
+   "fleet_spread": 7.069,
+   "generated": "2026-08-28T07:00:31Z",
+   "n_machines": 60,
+   "n_models": 47,
+   "rate_is": "per_core_s",
+   "units": "pyops"
+  }
+ },
+ "generated": "2026-08-28T07:00:31Z",
+ "schema": 2
+}

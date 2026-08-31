@@ -1,0 +1,23 @@
+{
+ "adapter_ident": "e5e96ec3e565bc9b1d24fb339b83f9fd930565826c0572a8281c45ca08fe5655",
+ "b2_guards": "checkpoints/mergeddemob-merged/e5e96ec3e565/guards",
+ "b2_model": "checkpoints/mergeddemob-merged/e5e96ec3e565/model",
+ "b2_root": "checkpoints/mergeddemob-merged",
+ "base": "qwen38-27b",
+ "content_sha256": "91c840f488294856be070c449d3955b9237d2d68f868a3c1397ea47c5400c5da",
+ "description": "MERGEDDEMOB: example merged artifact — a task adapter merged into qwen38-27b and published by a merge-publish job. b2_model/b2_guards are DERIVED from b2_root + adapter_ident[:12].",
+ "family": "qwen38-27b",
+ "fingerprint_sha256": "6433698cf59af2c151400b9381b783293baa2b6cdd27f9f8f49d68a2ac53cd81",
+ "id": "mergeddemob",
+ "kind": "merged",
+ "n_files": 33,
+ "schema_version": 1,
+ "serve": {
+  "dtype": "bfloat16",
+  "lora_forbidden": true,
+  "max_len": 20480,
+  "min_vram_gb": 96,
+  "served_name": "MERGEDDEMOB",
+  "tp": 1
+ }
+}

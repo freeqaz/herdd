@@ -1,0 +1,80 @@
+{"dph": 0.7088888888888888, "event": "unwatched", "iid": "46916278", "label": "upstream-monorepo", "note": "no fleet watch owns this box and it shows no workload evidence \u2014 fuse armed at tier=cheap dph=0.709", "ts_iso": "2026-08-05T21:08:07Z"}
+{"event": "alarm_raised", "key": "stray:46916278", "note": "46916278: UNWATCHED + IDLE-LOOKING for 53s at $0.709/hr [cheap] (label='upstream-monorepo') \u2014 `fleet watch` it", "ts_iso": "2026-08-05T21:08:07Z"}
+{"event": "watch_auto_adopted", "iid": "46916278", "profile": "bare", "requester": "fleetd:auto-adopt", "target": "46916278", "ts_iso": "2026-08-05T21:09:03Z"}
+{"event": "unwatched_adopted", "evidence": "booting", "iid": "46916278", "label": "upstream-monorepo", "note": "workload evidence \u2014 adopted as `bare`, NOT parked", "ts_iso": "2026-08-05T21:09:03Z"}
+{"event": "alarm_raised", "key": "watch:46916278:adopted", "note": "46916278: AUTO-ADOPTED by the safety net (no budget cap) \u2014 register a real `fleet watch`", "ts_iso": "2026-08-05T21:09:03Z"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-05T21:09:03Z"}
+{"event": "tick", "iid": "46916278", "profile": "bare", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T21:09:53Z"}
+{"budget_usd": 10.0, "event": "watch_registered", "iid": "46916278", "profile": "jobs", "requester": "operator@workstation", "target": "46916278", "ts_iso": "2026-08-05T21:10:45Z"}
+{"event": "spend_backfilled", "iid": "46916278", "spend_usd": 0.0001, "target": "46916278", "ts_iso": "2026-08-05T21:10:45Z"}
+{"event": "watch_adopted", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0001, "target": "46916278", "ts_iso": "2026-08-05T21:10:45Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0001, "target": "46916278", "ts_iso": "2026-08-05T21:10:49Z"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-05T21:10:49Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0128, "target": "46916278", "ts_iso": "2026-08-05T21:11:41Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.449, "target": "46916278", "ts_iso": "2026-08-05T21:37:19Z"}
+{"event": "health_alarm", "iid": "46916278", "ts_iso": "2026-08-05T21:38:06Z", "verdict": "ZOMBIE_TICKET_UNCLAIMED"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.4629, "target": "46916278", "ts_iso": "2026-08-05T21:38:08Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.7803, "target": "46916278", "ts_iso": "2026-08-05T21:56:34Z"}
+{"event": "health_alarm_cleared", "iid": "46916278", "ts_iso": "2026-08-05T21:57:27Z", "verdict": "OK"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.7962, "target": "46916278", "ts_iso": "2026-08-05T21:57:29Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 1.3504, "target": "46916278", "ts_iso": "2026-08-05T22:32:46Z", "verdict": "drained"}
+{"event": "watch_finished", "iid": "46916278", "profile": "jobs", "spend_usd": 1.3504, "target": "46916278", "ts_iso": "2026-08-05T22:32:46Z", "verdict": "drained"}
+{"event": "watch_auto_adopted", "iid": "46916278", "profile": "bare", "requester": "fleetd:auto-adopt", "target": "46916278", "ts_iso": "2026-08-05T22:32:46Z"}
+{"event": "unwatched_adopted", "evidence": "jobd heartbeat 124s old", "iid": "46916278", "label": "upstream-monorepo", "note": "workload evidence \u2014 adopted as `bare`, NOT parked", "ts_iso": "2026-08-05T22:32:46Z"}
+{"event": "alarm_raised", "key": "watch:46916278:adopted", "note": "46916278: AUTO-ADOPTED by the safety net (no budget cap) \u2014 register a real `fleet watch`", "ts_iso": "2026-08-05T22:32:46Z"}
+{"event": "tick", "iid": "46916278", "profile": "bare", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T22:33:27Z"}
+{"event": "tick", "iid": "46916278", "profile": "bare", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:32:27Z"}
+{"event": "operator_intent_start", "iid": "46916278", "requester": "operator@workstation", "ts_iso": "2026-08-05T23:32:41Z"}
+{"event": "tick", "iid": "46916278", "profile": "bare", "spend_usd": 0.012, "target": "46916278", "ts_iso": "2026-08-05T23:33:18Z"}
+{"budget_usd": 10.0, "event": "watch_registered", "iid": "46916278", "profile": "jobs", "requester": "operator@workstation", "target": "46916278", "ts_iso": "2026-08-05T23:34:07Z"}
+{"event": "spend_backfilled", "iid": "46916278", "spend_usd": 0.0123, "target": "46916278", "ts_iso": "2026-08-05T23:34:08Z"}
+{"event": "watch_adopted", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0123, "target": "46916278", "ts_iso": "2026-08-05T23:34:08Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0123, "target": "46916278", "ts_iso": "2026-08-05T23:34:11Z"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-05T23:34:11Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0273, "target": "46916278", "ts_iso": "2026-08-05T23:35:04Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0544, "target": "46916278", "ts_iso": "2026-08-05T23:36:40Z", "verdict": "drained"}
+{"event": "watch_finished", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0544, "target": "46916278", "ts_iso": "2026-08-05T23:36:40Z", "verdict": "drained"}
+{"event": "watch_auto_adopted", "iid": "46916278", "profile": "bare", "requester": "fleetd:auto-adopt", "target": "46916278", "ts_iso": "2026-08-05T23:36:40Z"}
+{"event": "unwatched_adopted", "evidence": "jobd heartbeat 82s old", "iid": "46916278", "label": "upstream-monorepo", "note": "workload evidence \u2014 adopted as `bare`, NOT parked", "ts_iso": "2026-08-05T23:36:40Z"}
+{"event": "alarm_raised", "key": "watch:46916278:adopted", "note": "46916278: AUTO-ADOPTED by the safety net (no budget cap) \u2014 register a real `fleet watch`", "ts_iso": "2026-08-05T23:36:40Z"}
+{"event": "tick", "iid": "46916278", "profile": "bare", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:37:22Z"}
+{"event": "tick", "iid": "46916278", "profile": "bare", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:38:57Z"}
+{"budget_usd": 10.0, "event": "watch_registered", "iid": "46916278", "profile": "jobs", "requester": "operator@workstation", "target": "46916278", "ts_iso": "2026-08-05T23:39:14Z"}
+{"event": "watch_adopted", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:39:43Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:39:46Z", "verdict": "drained"}
+{"event": "watch_finished", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:39:46Z", "verdict": "drained"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-05T23:39:46Z"}
+{"event": "operator_intent_stop", "iid": "46916278", "requester": "operator@workstation", "ts_iso": "2026-08-05T23:40:44Z"}
+{"event": "operator_intent_start", "iid": "46916278", "requester": "operator@workstation", "ts_iso": "2026-08-05T23:50:16Z"}
+{"event": "watch_auto_adopted", "iid": "46916278", "profile": "bare", "requester": "fleetd:auto-adopt", "target": "46916278", "ts_iso": "2026-08-05T23:50:53Z"}
+{"event": "unwatched_adopted", "evidence": "jobs-lane box", "iid": "46916278", "label": "upstream-monorepo", "note": "workload evidence \u2014 adopted as `bare`, NOT parked", "ts_iso": "2026-08-05T23:50:53Z"}
+{"event": "alarm_raised", "key": "watch:46916278:adopted", "note": "46916278: AUTO-ADOPTED by the safety net (no budget cap) \u2014 register a real `fleet watch`", "ts_iso": "2026-08-05T23:50:53Z"}
+{"budget_usd": 10.0, "event": "watch_registered", "iid": "46916278", "profile": "jobs", "requester": "operator@workstation", "target": "46916278", "ts_iso": "2026-08-05T23:51:25Z"}
+{"event": "spend_backfilled", "iid": "46916278", "spend_usd": 0.0003, "target": "46916278", "ts_iso": "2026-08-05T23:51:45Z"}
+{"event": "watch_adopted", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0003, "target": "46916278", "ts_iso": "2026-08-05T23:51:45Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0003, "target": "46916278", "ts_iso": "2026-08-05T23:51:48Z", "verdict": "drained"}
+{"event": "watch_finished", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0003, "target": "46916278", "ts_iso": "2026-08-05T23:51:48Z", "verdict": "drained"}
+{"event": "watch_auto_adopted", "iid": "46916278", "profile": "bare", "requester": "fleetd:auto-adopt", "target": "46916278", "ts_iso": "2026-08-05T23:51:48Z"}
+{"event": "unwatched_adopted", "evidence": "jobs-lane box", "iid": "46916278", "label": "upstream-monorepo", "note": "workload evidence \u2014 adopted as `bare`, NOT parked", "ts_iso": "2026-08-05T23:51:48Z"}
+{"event": "tick", "iid": "46916278", "profile": "bare", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:52:32Z"}
+{"budget_usd": 10.0, "event": "watch_registered", "iid": "46916278", "profile": "jobs", "requester": "operator@workstation", "target": "46916278", "ts_iso": "2026-08-05T23:53:05Z"}
+{"event": "watch_adopted", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:53:23Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:53:27Z"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-05T23:53:27Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:54:16Z"}
+{"budget_usd": 10.0, "event": "watch_registered", "iid": "46916278", "profile": "jobs", "requester": "operator@workstation", "target": "46916278", "ts_iso": "2026-08-05T23:54:59Z"}
+{"event": "watch_adopted", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:55:01Z"}
+{"event": "operator_intent_start", "iid": "46916278", "requester": "operator@workstation", "ts_iso": "2026-08-05T23:55:07Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0, "target": "46916278", "ts_iso": "2026-08-05T23:55:09Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0751, "target": "46916278", "ts_iso": "2026-08-05T23:58:59Z"}
+{"event": "spend_backfilled", "iid": "46916278", "spend_usd": 0.0758, "target": "46916278", "ts_iso": "2026-08-05T23:59:43Z"}
+{"event": "watch_adopted", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0758, "target": "46916278", "ts_iso": "2026-08-05T23:59:43Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.0758, "target": "46916278", "ts_iso": "2026-08-05T23:59:47Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.1798, "target": "46916278", "ts_iso": "2026-08-06T00:04:56Z"}
+{"event": "health_alarm", "iid": "46916278", "ts_iso": "2026-08-06T00:05:39Z", "verdict": "ZOMBIE_NO_JOBD"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.1955, "target": "46916278", "ts_iso": "2026-08-06T00:05:43Z"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.2131, "target": "46916278", "ts_iso": "2026-08-06T00:08:29Z"}
+{"event": "health_alarm_cleared", "iid": "46916278", "ts_iso": "2026-08-06T00:09:19Z", "verdict": "OK"}
+{"event": "tick", "iid": "46916278", "profile": "jobs", "spend_usd": 0.2131, "target": "46916278", "ts_iso": "2026-08-06T00:09:24Z"}
+{"event": "operator_intent_destroy", "iid": "46916278", "requester": "operator@workstation", "ts_iso": "2026-08-06T00:10:12Z"}
+{"event": "watch_finished", "iid": "46916278", "profile": "jobs", "spend_usd": 0.2131, "target": "46916278", "ts_iso": "2026-08-06T00:10:56Z", "verdict": "instance_gone"}

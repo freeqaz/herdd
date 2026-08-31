@@ -1,0 +1,20 @@
+# ship_manifest.txt — the single allowlist of repo code that ships to rented boxes.
+#
+# Consumed by `herdd sync` (default path set pushed to a live box).
+# Format: one git pathspec per line; a leading '!' excludes; '#' comments;
+# blank lines ignored. Enumeration is `git ls-files` over these pathspecs, so
+# untracked files, .env/secrets, *.db and build junk never ship.
+#
+# Add your own workload's runtime files here. The box-side baseline below is
+# what the herdd lanes themselves need on a box.
+tools/vast/onstart
+tools/vast/jobmeta.py
+tools/vast/bidpolicy.py
+tools/vast/runmeta.py
+tools/vast/metrics_probe.py
+tools/vast/parse_vllm_mem.py
+tools/vast/gemm_probe.py
+tools/vast/triton_cache.py
+tools/vast/cdn_pull.py
+tools/vast/b2_sync.sh
+tools/vast/b2_region.sh

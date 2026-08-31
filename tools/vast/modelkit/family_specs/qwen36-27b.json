@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "family": "qwen36-27b",
+  "description": "Qwen3.6-27B multimodal base, v4 relayout merge. Geometry counted 2026-08-08 from the base's own model.safetensors.index.json (1199 = 851 text + 333 model.visual.* + 15 mtp.*) and from the safetensors HEADER of the published adapter (992 = 496 lora_A + 496 lora_B over 496 modules). kept_from_base is DERIVED below, never typed. Hoisted verbatim from tools/witness/jobs/driftr3-v10-27b-gen/merge_guard_27b.py.",
+
+  "marker_name": ".v4_relayout_ok.json",
+
+  "geometry": {
+    "base_total_tensors": 1199,
+    "text_tensors_substituted": 851,
+    "wrapper_tensors": 348,
+    "lora_tensors_attached": 992
+  },
+  "derived": {
+    "wrapper_tensors": ["base_total_tensors", "-", "text_tensors_substituted"]
+  },
+
+  "marker_fields": {
+    "substituted": "@text_tensors_substituted",
+    "expect_text": "@text_tensors_substituted",
+    "expect_total": "@base_total_tensors",
+    "base_tensors": "@base_total_tensors",
+    "kept_from_base": "@wrapper_tensors",
+    "lora_tensors_attached": "@lora_tensors_attached"
+  },
+
+  "probe_keys": [
+    "model.language_model.layers.0.linear_attn.in_proj_qkv.weight"
+  ],
+  "frozen_keys": [
+    "model.language_model.layers.0.input_layernorm.weight",
+    "model.visual.merger.linear_fc1.weight"
+  ],
+
+  "index": {
+    "expect_tensors": "@base_total_tensors",
+    "allow_single_file": false
+  },
+
+  "merge": {
+    "kind": "relayout",
+    "marker_map": {
+      "substituted": "n_substituted",
+      "expect_text": "n_text_expected",
+      "expect_total": "n_base_expected",
+      "base_tensors": "n_base_actual",
+      "kept_from_base": "n_kept",
+      "lora_tensors_attached": "n_lora_attached"
+    }
+  },
+
+  "base_pin_check": {
+    "kind": "wrapper_files",
+    "skip_suffixes": [".safetensors"],
+    "skip_prefixes": ["_"]
+  }
+}

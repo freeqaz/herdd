@@ -1,0 +1,30 @@
+# herdd defaults — read by tools/vast/herdd.py at startup (load_herdd_config()).
+#
+# Precedence (later wins per-key): this file -> ~/.config/herdd/herdd.yaml
+# (personal override, not checked in) -> $HERDD_CONFIG (explicit path override).
+# A key omitted everywhere falls back to the hardcoded default in the code.
+#
+# Uses PyYAML if installed, else a stdlib-only flat-mapping fallback parser —
+# keep this file to simple `key: value` lines, no nested maps/lists.
+
+# Image `herdd launch` / `herdd supervise` / `herdd train` use when
+# --image is omitted. Point this at your own baked image; herdd auto-attaches
+# registry login (REGISTRY_AUTH_SECRET in .env) for private registries.
+default_image: registry.example.com/train:latest
+
+# Default disk allocation (GB) per launch kind. Storage bills on the ALLOCATED
+# disk whether or not a byte is written — size these DOWN, not up.
+# default_disk: 40
+# default_disk_train: 120
+
+# Allow GPU workloads on the local machine (`herdd job run-local`,
+# local_smoke.py). Off by default so a fresh checkout is conservative.
+allow_local_gpu: false
+
+# fleetd's economic jobs-lane handoff (park + rent a replacement mid-queue).
+# Off by default; the bid ladder covers the same case without a second box.
+jobs_handoff_unsafe_enable: false
+
+# Budget cap (USD) fleetd applies when auto-adopting an unwatched box that has
+# no durable ceiling to inherit. A breach PARKS and alarms, never destroys.
+fleetd_adopt_default_budget_usd: 10.0

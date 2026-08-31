@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "qwen38-27b",
+  "kind": "base",
+  "description": "Qwen3.8-27B multimodal base snapshot, as published to B2: 33 objects, 55,586,114,966 B = 51.769 GiB, 18 shards. 1,199 tensors = 851 text + 333 model.visual.* + 15 mtp.*, counted 2026-08-24 from this snapshot's own model.safetensors.index.json. The relayout substitutes the text stack and copies the vision tower, the MTP head and every non-.safetensors wrapper file VERBATIM, which is why a merged dir built from a DIFFERENT snapshot passes every merge guard and serves a different model. NOT interchangeable with qwen36-27b despite an identical tensor NAME set and a config differing only in transformers_version: different weights, 18 shards not 15, and a different wrapper file set (adds .gitattributes/LICENSE/README.md/crc32.txt, drops configuration.json).",
+  "family": "qwen38-27b",
+  "b2_root": "base-models/qwen38-27b",
+  "content_sha256": "c289648aaf2e10415d2d7f44392c9a1774d30bdcc7cfbb00eef8bb7834a53227",
+  "n_files": 32
+}

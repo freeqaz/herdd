@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "eval-toy",
+  "entrypoint": "run.sh",
+  "timeout_s": 120,
+  "env": {"STUB_MODELS": "stub-base,reader"},
+  "results": ["out/**"],
+  "checkpoints": ["out/probe.ndjson"],
+  "checkpoint_s": 300,
+  "needs": {"gpu": false, "venv": "none"},
+  "assets": [
+    {
+      "name": "reader-adapter",
+      "b2": "modelzoo/adapters/reader-688",
+      "dest": "adapter",
+      "require": ["adapter_config.json", "*.safetensors"]
+    }
+  ]
+}

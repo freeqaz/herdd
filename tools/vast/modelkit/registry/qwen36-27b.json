@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "qwen36-27b",
+  "kind": "base",
+  "description": "Qwen3.6-27B multimodal base snapshot, as published to B2. 1,199 tensors = 851 text + 333 model.visual.* + 15 mtp.*; the merge relayout substitutes the text stack and copies the vision tower, the MTP head and every non-.safetensors wrapper file VERBATIM, which is why a merged dir built from a DIFFERENT snapshot passes every merge guard and serves a different model.",
+  "family": "qwen36-27b",
+  "b2_root": "base-models/qwen36-27b",
+  "content_sha256": "6ea978e4a7a17608c842b8d2db37eb36ff2ccaa1217500d48724601b6c2bfda1",
+  "n_files": 26
+}

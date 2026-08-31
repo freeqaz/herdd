@@ -1,0 +1,69 @@
+# ruff config for Zone P ONLY (tools/vast/vastlib).
+#
+# This file lives INSIDE the package on purpose. Ruff resolves configuration
+# hierarchically — for each file it checks, it walks up from that file to the
+# nearest ruff.toml / pyproject.toml carrying a [tool.ruff] section. So this
+# config binds every file under tools/vast/vastlib and NOTHING else: the rest
+# of the repo (which has no ruff config at all, and never has) keeps running
+# ruff on stock defaults exactly as before. Editors and LSPs pick it up for
+# free, which is why it is a local ruff.toml rather than a pyproject stanza.
+#
+# Enforced by tools/vast/test_vastlib_static.py, because tools/vast has no CI.
+# Plan of record: docs/plans/vast-tooling-refactor-v2.md §6.
+
+# Repo floor is 3.10 (pyproject requires-python). fleetd's release venv is
+# 3.13; both are fine, but the package must not use 3.11+ syntax.
+target-version = "py310"
+
+# Measured against the tree this package is absorbing: the longest lines in
+# vastconf/ladder_core/bidpolicy/fleetd are 93/86/101/111, with the bulk under
+# 100. 100 keeps verbatim ports verbatim instead of forcing cosmetic rewrapping
+# on code whose whole value proposition is "behavior-preserving move".
+line-length = 100
+indent-width = 4
+
+[lint]
+# Plan §6: pycodestyle + pyflakes + isort + flake8-annotations.
+#   E, W  pycodestyle          (E501 line length, whitespace, statement style)
+#   F     pyflakes             (undefined/unused names — the real bug finder)
+#   I     isort                (import order, and I002 below)
+#   ANN   flake8-annotations   (the "strict typed" half of §6, at the syntax
+#                               layer; mypy strict is the semantic half)
+select = ["E", "W", "F", "I", "ANN"]
+
+# ANN401 (Any in an annotated position) is deliberately LEFT ON. Zone P is the
+# typed zone; an `Any` here should cost a per-line `# noqa: ANN401` with a
+# reason next to it, not be free. The vast.ai API's genuinely-unknown fields
+# have a designed home instead — pydantic `model_extra` in core/models.py.
+ignore = []
+
+[lint.isort]
+# §6: `from __future__ import annotations` everywhere in Zone P. I002 makes
+# that mechanical rather than a review item.
+required-imports = ["from __future__ import annotations"]
+
+known-first-party = ["vastlib"]
+
+# Zone S — the shipped flat leaves. vastlib imports them BARE-NAME (tools/vast
+# is on sys.path for every entry script) and they may never import back.
+# Filing them in their own trailing import group makes the zone boundary
+# visible at every call site instead of leaving them to be guessed as
+# third-party. The authoritative Zone S roster is the plan's §3 list, mirrored
+# in code by `herdd._job_attach_files()` (the jobd bundle) and
+# `ship_manifest.txt`; shipcheck.py checks both. Keep this in sync with those.
+known-local-folder = [
+    "bidpolicy",
+    "gemm_probe",
+    "jobmeta",
+    "metrics_probe",
+    "parse_vllm_mem",
+    "runmeta",
+    "triton_cache",
+]
+
+[lint.per-file-ignores]
+# Package/subpackage __init__ files are the boundary docstrings (the house
+# convention this package generalizes). They carry no defs, so ANN has nothing
+# to say; re-exports arrive later and F401 will be handled with explicit
+# __all__ rather than a blanket waiver.
+"__init__.py" = ["ANN"]

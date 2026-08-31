@@ -1,0 +1,64 @@
+{"budget_usd": 5.0, "event": "watch_registered", "iid": "46687567", "profile": "jobs", "requester": "operator@workstation", "target": "46687567", "ts_iso": "2026-08-03T08:56:35Z"}
+{"event": "watch_adopted", "iid": "46687567", "profile": "jobs", "spend_usd": 0.0, "target": "46687567", "ts_iso": "2026-08-03T08:56:50Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.0, "target": "46687567", "ts_iso": "2026-08-03T08:56:51Z", "verdict": "queue_empty"}
+{"budget_usd": 5.0, "event": "jobs_queue_empty", "iid": "46687567", "note": "nothing submitted yet \u2014 watch KEPT with its profile+budget so the outbid rescue ladder stays armed (`queue_empty` is terminal for the inline CLI only, never for the daemon)", "profile": "jobs", "target": "46687567", "ts_iso": "2026-08-03T08:56:51Z"}
+{"event": "alarm_raised", "key": "watch:46687567:queue_empty", "note": "46687567: jobs watch armed but its QUEUE IS EMPTY for -2s \u2014 submit the wave (watch kept, cap $5.0)", "ts_iso": "2026-08-03T08:56:51Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.0037, "target": "46687567", "ts_iso": "2026-08-03T08:57:34Z", "verdict": "queue_empty"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.0107, "target": "46687567", "ts_iso": "2026-08-03T08:58:57Z"}
+{"event": "jobs_queue_filled", "iid": "46687567", "note": "tickets present \u2014 the jobs ladder (defend / outbid rescue / drain park) is driving again", "target": "46687567", "ts_iso": "2026-08-03T08:58:57Z"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-03T08:58:57Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.0142, "target": "46687567", "ts_iso": "2026-08-03T08:59:39Z", "verdict": "drained"}
+{"event": "watch_finished", "iid": "46687567", "profile": "jobs", "spend_usd": 0.0142, "target": "46687567", "ts_iso": "2026-08-03T08:59:39Z", "verdict": "drained"}
+{"event": "watch_auto_adopted", "iid": "46687567", "profile": "bare", "requester": "fleetd:auto-adopt", "target": "46687567", "ts_iso": "2026-08-03T08:59:39Z"}
+{"event": "unwatched_adopted", "evidence": "booted 189s ago", "iid": "46687567", "label": "rep-length-w3", "note": "workload evidence \u2014 adopted as `bare`, NOT parked", "ts_iso": "2026-08-03T08:59:39Z"}
+{"event": "alarm_raised", "key": "watch:46687567:adopted", "note": "46687567: AUTO-ADOPTED by the safety net (no budget cap) \u2014 register a real `fleet watch`", "ts_iso": "2026-08-03T08:59:39Z"}
+{"event": "tick", "iid": "46687567", "profile": "bare", "spend_usd": 0.0, "target": "46687567", "ts_iso": "2026-08-03T09:00:19Z"}
+{"event": "tick", "iid": "46687567", "profile": "bare", "spend_usd": 0.0304, "target": "46687567", "ts_iso": "2026-08-03T09:06:18Z"}
+{"budget_usd": 5.0, "event": "watch_registered", "iid": "46687567", "profile": "jobs", "requester": "operator@workstation", "target": "46687567", "ts_iso": "2026-08-03T09:07:04Z"}
+{"event": "spend_backfilled", "iid": "46687567", "spend_usd": 0.0305, "target": "46687567", "ts_iso": "2026-08-03T09:07:08Z"}
+{"event": "watch_adopted", "iid": "46687567", "profile": "jobs", "spend_usd": 0.0305, "target": "46687567", "ts_iso": "2026-08-03T09:07:08Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.0305, "target": "46687567", "ts_iso": "2026-08-03T09:07:11Z"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-03T09:07:11Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.0351, "target": "46687567", "ts_iso": "2026-08-03T09:08:06Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.2407, "target": "46687567", "ts_iso": "2026-08-03T09:33:39Z"}
+{"budget_usd": 5.0, "event": "watch_registered", "iid": "46687567", "profile": "jobs", "requester": "operator@workstation", "target": "46687567", "ts_iso": "2026-08-03T09:34:12Z"}
+{"event": "spend_backfilled", "iid": "46687567", "spend_usd": 0.2409, "target": "46687567", "ts_iso": "2026-08-03T09:34:32Z"}
+{"event": "watch_adopted", "iid": "46687567", "profile": "jobs", "spend_usd": 0.2409, "target": "46687567", "ts_iso": "2026-08-03T09:34:32Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.2409, "target": "46687567", "ts_iso": "2026-08-03T09:34:35Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.6938, "target": "46687567", "ts_iso": "2026-08-03T10:49:25Z", "verdict": "unrecoverable"}
+{"budget_usd": 5.0, "event": "jobs_rescue_stalled", "iid": "46687567", "note": "rescue gave up but the instance still exists \u2014 watch KEPT with its profile+budget; an auto-resume re-arms the ladder, a truly dead box is reaped via instance_gone", "profile": "jobs", "target": "46687567", "ts_iso": "2026-08-03T10:49:25Z"}
+{"event": "alarm_raised", "key": "watch:46687567:rescue_stalled", "note": "46687567: jobs RESCUE STALLED for -3s \u2014 box still exists, watch kept (cap $5.0); raise the bid, `job retarget` the tickets, or `fleet destroy` it", "ts_iso": "2026-08-03T10:49:25Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.6983, "target": "46687567", "ts_iso": "2026-08-03T10:50:21Z"}
+{"event": "jobs_rescue_recovered", "iid": "46687567", "note": "box back under its jobs watch \u2014 budget cap + bid ladder + reattach-on-resume re-armed", "target": "46687567", "ts_iso": "2026-08-03T10:50:21Z"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-03T10:50:21Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.7047, "target": "46687567", "ts_iso": "2026-08-03T10:51:06Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 1.2251, "target": "46687567", "ts_iso": "2026-08-03T12:18:21Z", "verdict": "unrecoverable"}
+{"budget_usd": 5.0, "event": "jobs_rescue_stalled", "iid": "46687567", "note": "rescue gave up but the instance still exists \u2014 watch KEPT with its profile+budget; an auto-resume re-arms the ladder, a truly dead box is reaped via instance_gone", "profile": "jobs", "target": "46687567", "ts_iso": "2026-08-03T12:18:21Z"}
+{"event": "alarm_raised", "key": "watch:46687567:rescue_stalled", "note": "46687567: jobs RESCUE STALLED for -3s \u2014 box still exists, watch kept (cap $5.0); raise the bid, `job retarget` the tickets, or `fleet destroy` it", "ts_iso": "2026-08-03T12:18:21Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 1.2295, "target": "46687567", "ts_iso": "2026-08-03T12:19:16Z"}
+{"event": "jobs_rescue_recovered", "iid": "46687567", "note": "box back under its jobs watch \u2014 budget cap + bid ladder + reattach-on-resume re-armed", "target": "46687567", "ts_iso": "2026-08-03T12:19:16Z"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-03T12:19:16Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 1.2364, "target": "46687567", "ts_iso": "2026-08-03T12:20:04Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 1.4826, "target": "46687567", "ts_iso": "2026-08-03T13:00:48Z", "verdict": "drained"}
+{"event": "watch_finished", "iid": "46687567", "profile": "jobs", "spend_usd": 1.4826, "target": "46687567", "ts_iso": "2026-08-03T13:00:48Z", "verdict": "drained"}
+{"event": "watch_auto_adopted", "iid": "46687567", "profile": "bare", "requester": "fleetd:auto-adopt", "target": "46687567", "ts_iso": "2026-08-03T13:00:48Z"}
+{"event": "unwatched_adopted", "evidence": "jobd heartbeat 58s old", "iid": "46687567", "label": "keep:rep-length-wave-gen-unrecovered", "note": "workload evidence \u2014 adopted as `bare`, NOT parked", "ts_iso": "2026-08-03T13:00:48Z"}
+{"event": "alarm_raised", "key": "watch:46687567:adopted", "note": "46687567: AUTO-ADOPTED by the safety net (no budget cap) \u2014 register a real `fleet watch`", "ts_iso": "2026-08-03T13:00:48Z"}
+{"event": "tick", "iid": "46687567", "profile": "bare", "spend_usd": 0.0, "target": "46687567", "ts_iso": "2026-08-03T13:01:36Z"}
+{"event": "tick", "iid": "46687567", "profile": "bare", "spend_usd": 0.0179, "target": "46687567", "ts_iso": "2026-08-03T13:04:38Z"}
+{"budget_usd": 3.5, "event": "watch_registered", "iid": "46687567", "profile": "jobs", "requester": "operator@workstation", "target": "46687567", "ts_iso": "2026-08-03T13:04:42Z"}
+{"event": "spend_backfilled", "iid": "46687567", "spend_usd": 0.018, "target": "46687567", "ts_iso": "2026-08-03T13:05:31Z"}
+{"event": "watch_adopted", "iid": "46687567", "profile": "jobs", "spend_usd": 0.018, "target": "46687567", "ts_iso": "2026-08-03T13:05:31Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.018, "target": "46687567", "ts_iso": "2026-08-03T13:05:35Z"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-03T13:05:35Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 0.0227, "target": "46687567", "ts_iso": "2026-08-03T13:06:23Z"}
+{"event": "tick", "iid": "46687567", "profile": "jobs", "spend_usd": 1.1131, "target": "46687567", "ts_iso": "2026-08-03T16:36:01Z", "verdict": "drained"}
+{"event": "watch_finished", "iid": "46687567", "profile": "jobs", "spend_usd": 1.1131, "target": "46687567", "ts_iso": "2026-08-03T16:36:01Z", "verdict": "drained"}
+{"event": "watch_auto_adopted", "iid": "46687567", "profile": "bare", "requester": "fleetd:auto-adopt", "target": "46687567", "ts_iso": "2026-08-03T16:36:01Z"}
+{"event": "unwatched_adopted", "evidence": "jobd heartbeat 91s old", "iid": "46687567", "label": "keep:rep-length-wave-gen-unrecovered", "note": "workload evidence \u2014 adopted as `bare`, NOT parked", "ts_iso": "2026-08-03T16:36:01Z"}
+{"event": "alarm_raised", "key": "watch:46687567:adopted", "note": "46687567: AUTO-ADOPTED by the safety net (no budget cap) \u2014 register a real `fleet watch`", "ts_iso": "2026-08-03T16:36:01Z"}
+{"event": "tick", "iid": "46687567", "profile": "bare", "spend_usd": 0.0, "target": "46687567", "ts_iso": "2026-08-03T16:36:53Z"}
+{"event": "tick", "iid": "46687567", "profile": "bare", "spend_usd": 0.0085, "target": "46687567", "ts_iso": "2026-08-03T16:38:20Z"}
+{"event": "operator_intent_destroy", "iid": "46687567", "requester": "operator@workstation", "ts_iso": "2026-08-03T16:38:51Z"}
+{"event": "watch_finished", "iid": "46687567", "profile": "bare", "spend_usd": 0.0085, "target": "46687567", "ts_iso": "2026-08-03T16:39:51Z", "verdict": "instance_gone"}
+{"event": "alarm_resolved", "note": "condition no longer true in the fleet state", "ts_iso": "2026-08-03T16:39:51Z"}

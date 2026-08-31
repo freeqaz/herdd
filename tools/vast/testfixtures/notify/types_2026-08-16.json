@@ -1,0 +1,557 @@
+{
+ "notification_types": [
+  {
+   "category": "transactional",
+   "context": "host",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Machine offline",
+   "effects_opt_in_policy": "required",
+   "key": "host:machine_offline",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "machine_offline",
+   "topic": "machine",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "host",
+   "default_preferences": {
+    "email": true,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Machine verification failed",
+   "effects_opt_in_policy": "required",
+   "key": "host:machine_unverified",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "machine_unverified",
+   "topic": "machine",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "host",
+   "default_preferences": {
+    "email": true,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Machine issue detected",
+   "effects_opt_in_policy": "required",
+   "key": "host:machine_error",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "machine_error",
+   "topic": "machine",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "host",
+   "default_preferences": {
+    "email": false,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Machine reported by renter",
+   "effects_opt_in_policy": "required",
+   "key": "host:receive_reports",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "receive_reports",
+   "topic": "machine",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "host",
+   "default_preferences": {
+    "email": false,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Machine disk space low",
+   "effects_opt_in_policy": "required",
+   "key": "host:low_disk_space",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "low_disk_space",
+   "topic": "machine",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "host",
+   "default_preferences": {
+    "email": true,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Machine listing ending soon",
+   "effects_opt_in_policy": "required",
+   "key": "host:near_end_date",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "near_end_date",
+   "topic": "machine",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "host",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Maintenance window confirmed",
+   "effects_opt_in_policy": "required",
+   "key": "host:maintenance_scheduled",
+   "mandatory_email": true,
+   "security_critical": false,
+   "slug": "maintenance_scheduled",
+   "topic": "machine",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance created",
+   "effects_opt_in_policy": "required",
+   "key": "client:instance_created",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "instance_created",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance started",
+   "effects_opt_in_policy": "required",
+   "key": "client:instance_started",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "instance_started",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance stopped",
+   "effects_opt_in_policy": "required",
+   "key": "client:instance_stopped",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "instance_stopped",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance resumed",
+   "effects_opt_in_policy": "required",
+   "key": "client:instance_resumed",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "instance_resumed",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance deleted",
+   "effects_opt_in_policy": "required",
+   "key": "client:instance_deleted",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "instance_deleted",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance outbid",
+   "effects_opt_in_policy": "required",
+   "key": "client:outbid",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "outbid",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance maintenance scheduled",
+   "effects_opt_in_policy": "required",
+   "key": "client:machine_maintenance",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "machine_maintenance",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance offline",
+   "effects_opt_in_policy": "required",
+   "key": "client:instance_offline",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "instance_offline",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Upcoming instance downtime",
+   "effects_opt_in_policy": "required",
+   "key": "client:upcoming_downtime",
+   "mandatory_email": true,
+   "security_critical": false,
+   "slug": "upcoming_downtime",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance back online",
+   "effects_opt_in_policy": "required",
+   "key": "client:instance_online",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "instance_online",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance error detected",
+   "effects_opt_in_policy": "required",
+   "key": "client:error_msgs",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "error_msgs",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance disk space low",
+   "effects_opt_in_policy": "required",
+   "key": "client:low_disk_space",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "low_disk_space",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance storage full",
+   "effects_opt_in_policy": "bypass",
+   "key": "client:storage_full",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "storage_full",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance GPU idle",
+   "effects_opt_in_policy": "bypass",
+   "key": "client:idle_gpu",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "idle_gpu",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Balance running low",
+   "effects_opt_in_policy": "required",
+   "key": "client:low_credit",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "low_credit",
+   "topic": "billing",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Payment receipt",
+   "effects_opt_in_policy": "required",
+   "key": "client:payment_receipt",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "payment_receipt",
+   "topic": "billing",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": false,
+    "in_app": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Credit transfer received",
+   "effects_opt_in_policy": "required",
+   "key": "client:credit_received",
+   "mandatory_email": false,
+   "security_critical": false,
+   "slug": "credit_received",
+   "topic": "billing",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Instance expiring soon",
+   "effects_opt_in_policy": "required",
+   "key": "client:near_end_date",
+   "mandatory_email": true,
+   "security_critical": false,
+   "slug": "near_end_date",
+   "topic": "instance",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Email verification",
+   "effects_opt_in_policy": "required",
+   "key": "client:email_verification",
+   "mandatory_email": true,
+   "security_critical": true,
+   "slug": "email_verification",
+   "topic": "account",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Password reset",
+   "effects_opt_in_policy": "required",
+   "key": "client:password_reset",
+   "mandatory_email": true,
+   "security_critical": true,
+   "slug": "password_reset",
+   "topic": "account",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Email change",
+   "effects_opt_in_policy": "required",
+   "key": "client:email_change",
+   "mandatory_email": true,
+   "security_critical": true,
+   "slug": "email_change",
+   "topic": "account",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Payment failed",
+   "effects_opt_in_policy": "required",
+   "key": "client:billing_failed",
+   "mandatory_email": true,
+   "security_critical": false,
+   "slug": "billing_failed",
+   "topic": "billing",
+   "unreleased": false
+  },
+  {
+   "category": "transactional",
+   "context": "client",
+   "default_preferences": {
+    "email": true,
+    "sms": false,
+    "webhooks": false,
+    "whatsapp": false
+   },
+   "display_name": "Team invitation",
+   "effects_opt_in_policy": "required",
+   "key": "client:team_invitation",
+   "mandatory_email": true,
+   "security_critical": false,
+   "slug": "team_invitation",
+   "topic": "account",
+   "unreleased": false
+  }
+ ],
+ "success": true
+}

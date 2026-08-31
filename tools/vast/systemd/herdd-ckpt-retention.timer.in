@@ -1,0 +1,17 @@
+[Unit]
+Description=run the B2 checkpoint-retention report daily
+
+[Timer]
+# OnCalendar rather than the OnBootSec+OnUnitActiveSec pair the reaper uses.
+# The monotonic pair fires the instant the unit is installed, because the boot
+# offset is long past on a box that has been up a while — a surprise for a
+# command that crawls B2 for tens of minutes. It also makes Persistent= a no-op,
+# so a missed day was silently skipped instead of caught up.
+# 04:17, not 04:00: off-peak, and off the round minute everything else on this
+# box schedules itself to.
+OnCalendar=*-*-* 04:17:00
+RandomizedDelaySec=1h
+Persistent=true
+
+[Install]
+WantedBy=timers.target

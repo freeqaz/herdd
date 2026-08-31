@@ -1,0 +1,23 @@
+[Unit]
+Description=B2 intermediate-checkpoint retention REPORT (dry run, never deletes)
+Documentation=file://@DS_ROOT@/tools/vast/systemd/README.md
+
+[Service]
+Type=oneshot
+WorkingDirectory=@DS_ROOT@
+# `plan` is a DRY RUN and this unit never passes --apply. The asymmetry with
+# herdd-reaper is deliberate: reap destroys rented boxes, which we can
+# re-rent; this would delete B2 objects, which is irreversible and has no undo.
+# Making it apply should be a deliberate edit here, not a flag someone sets by
+# accident.
+EnvironmentFile=@DS_ROOT@/.env
+# Intended-empty default. Without the declaration systemd logs "Referenced but
+# unset environment variable" on every run.
+Environment=CKPT_RETENTION_ARGS=
+ExecStart=@DS_ROOT@/.venv/bin/python @DS_ROOT@/tools/vast/ckpt_retention.py plan $CKPT_RETENTION_ARGS
+# Type=oneshot defaults TimeoutStartSec to infinity, and a timer cannot trigger
+# a unit that never went inactive — so one hang silently ends every future run.
+# Not hypothetical here: the plan's bucket listing is a single rclone pass over
+# ~100k objects and did not finish in 10 min even scoped to one job, so the
+# FIRST scheduled run hung. 45min, then it fails honestly.
+TimeoutStartSec=45min

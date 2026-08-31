@@ -1,0 +1,12 @@
+[project]
+name = "herdd"
+version = "0.1.0"
+description = "Control CLI + fleet-supervision daemon for vast.ai GPU rentals"
+requires-python = ">=3.13"
+dependencies = ["pydantic>=2"]
+
+[project.optional-dependencies]
+test = ["pytest", "pyyaml", "requests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tools/vast"]

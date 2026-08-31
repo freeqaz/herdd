@@ -1,0 +1,18 @@
+[Unit]
+Description=hostfacts ingest — pin instance-keyed host facts to their machine
+Documentation=file://@DS_ROOT@/tools/vast/systemd/README.md
+
+[Service]
+Type=oneshot
+WorkingDirectory=@DS_ROOT@
+# `ingest` is a PROMOTION: it copies a record to a machine-keyed key and never
+# moves or deletes the original, so a failed or partial run costs nothing and
+# the next one picks up where it stopped. That is what makes it safe on a timer.
+ExecStart=@DS_ROOT@/.venv/bin/python @DS_ROOT@/tools/vast/hostfacts.py ingest
+# Type=oneshot defaults TimeoutStartSec to infinity, so a wedged rclone leaves
+# the unit "activating" forever — and a timer cannot trigger a unit that never
+# went inactive, so one hang silently ends all future ingests. Measured: a
+# dry-run sweep is ~433s and grows with the store, hence 45min rather than a
+# tight bound. This is CLAUDE.md's "always bound a wait with a deadline",
+# applied to a unit instead of a shell loop.
+TimeoutStartSec=45min

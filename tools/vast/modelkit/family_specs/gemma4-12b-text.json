@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "family": "gemma4-12b-text",
+  "description": "Gemma-4-12B TEXT-ONLY extraction, flat model.layers.* layout (no model.language_model.* wrapper, no visual tower). Both counts read 2026-08-09 from real safetensors headers: 666 base tensors, 656 LoRA tensors attached (328 lora_A + 328 lora_B over 328 Linears; v_proj covers 40 layers not 48 because attention_k_eq_v makes the 8 full_attention layers reuse k_proj, so 40*2 + 6*48*2 = 656). Hoisted from tools/witness/jobs/driftr3-v9-gemma4-gen/merge_guard_g4.py.",
+
+  "marker_name": ".g4_merge_ok.json",
+
+  "geometry": {
+    "base_tensors": 666,
+    "lora_tensors_attached": 656
+  },
+
+  "marker_fields": {
+    "base_tensors": "@base_tensors",
+    "merged_tensors": "@base_tensors",
+    "lora_tensors_attached": "@lora_tensors_attached",
+    "keys_equal_base": true,
+    "arch": "Gemma4UnifiedForCausalLM",
+    "model_type": "gemma4_unified_text"
+  },
+
+  "probe_keys": [
+    "model.layers.0.self_attn.q_proj.weight",
+    "model.layers.5.self_attn.q_proj.weight"
+  ],
+  "frozen_keys": [
+    "model.embed_tokens.weight",
+    "model.layers.0.input_layernorm.weight",
+    "model.norm.weight"
+  ],
+
+  "absent_keys": ["model.layers.5.self_attn.v_proj.weight"],
+  "marker_absent_field": "absent_in_base",
+
+  "index": {
+    "expect_tensors": "@base_tensors",
+    "allow_single_file": true
+  },
+
+  "merge": {
+    "kind": "flat",
+    "marker_map": {
+      "base_tensors": "n_base_actual",
+      "merged_tensors": "n_merged_actual",
+      "lora_tensors_attached": "n_lora_attached",
+      "keys_equal_base": "keys_equal_base",
+      "arch": "arch",
+      "model_type": "model_type"
+    }
+  },
+
+  "base_pin_check": {
+    "kind": "config_files",
+    "bytewise": ["config.json"],
+    "semantic": {
+      "generation_config.json": {"exempt_keys": ["transformers_version"]}
+    }
+  }
+}

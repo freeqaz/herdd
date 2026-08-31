@@ -1,0 +1,19 @@
+[Unit]
+Description=run hostfacts ingest hourly
+
+[Timer]
+# Hourly, not every 15 minutes like the reaper. Before the machine ledger this
+# job was racing box destruction and wanted to be as frequent as possible; now
+# fleetd writes the instance -> machine mapping down every 45s and ingest is
+# only promoting records that are already resolvable. Nothing here is
+# time-critical any more.
+OnBootSec=7min
+# InactiveSec, not ActiveSec: the interval is measured from when the last run
+# FINISHED. A sweep is ~433s today and scales with the store, so an ActiveSec
+# hour would shrink the real gap as the store grows and eventually schedule
+# back-to-back runs. The reaper can use ActiveSec because `reap` is quick.
+OnUnitInactiveSec=1h
+RandomizedDelaySec=5min
+
+[Install]
+WantedBy=timers.target

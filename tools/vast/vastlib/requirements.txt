@@ -1,0 +1,19 @@
+# Zone P runtime dependencies (tools/vast/vastlib). Deliberately tiny.
+#
+# pydantic parses the vast.ai API boundary in vastlib/core/models.py (Offer,
+# Instance, MachineRow, MarketRead, BidState). Owner decision 2026-08-16:
+# "baking this in as a dep is likely very cheap anyway."
+#
+# THIS FILE IS A DEPLOY INPUT, not documentation. fleetd's release-checkout
+# deploy (`fleetd deploy`, ~/.local/share/vast-fleetd/checkout with its own
+# py3.13 venv) grows a `pip install -r tools/vast/vastlib/requirements.txt`
+# step into that audited venv, with a fail-closed import probe BEFORE the
+# systemd restart — a daemon that restarts into a venv missing pydantic is a
+# fleet that stops supervising. Plan §6 / §10.
+#
+# The workstation gets the same set through the repo pyproject extra:
+#   uv pip install --python .venv/bin/python -e ".[vast]"
+#
+# Zone S (the shipped flat leaves) stays stdlib-only and must NEVER appear
+# here — box-side pydantic is explicitly a later step (plan §0.3).
+pydantic>=2
